@@ -315,7 +315,7 @@ class RedisDB(_BaseDatabase):
 
 class LocalDB(_BaseDatabase):
     def __init__(self):
-        self.db = Database("chums")
+        self.db = Database("panda")
         self.get = self.db.get
         self.set = self.db.set
         self.delete = self.db.delete
