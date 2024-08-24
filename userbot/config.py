@@ -199,9 +199,9 @@ QUEUE_PIC = (
     os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png"
 )
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "PandaUserbot")
-GROUP = os.environ.get("GROUP", "TeamSquadUserbotSupport")
-CHANNEL = os.environ.get("CHANNEL", "PandaUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Chums Userbot")
+GROUP = os.environ.get("GROUP", "ErRickowUB")
+CHANNEL = os.environ.get("CHANNEL", "ChumsUb")
 BYPASS_URL = os.environ.get("BYPASS_URL", "@bypassvip_bot")
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./downloads/")
 GENIUS = os.environ.get("GENIUS_ACCESS_TOKEN", None)
