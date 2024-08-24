@@ -89,7 +89,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 xx, "**Build Gagal!** Dibatalkan karena ada beberapa error.`"
             )
         await edit_or_reply(
-            xx, "`Panda-Userbot Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
+            xx, "`Chums Userbot Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
         )
 
     else:
@@ -103,8 +103,8 @@ async def update(xx, repo, ups_rem, ac_br):
         ups_rem.pull(ac_br)
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
-    await edit_or_reply(
-        xx, "`Panda Userbot Berhasil Diupdate! Mohon bersabarr...`"
+    await event.reply(
+        xx, "`Chums Userbot Berhasil Diupdate! Mohon bersabarr...`"
     )
 
     try:
