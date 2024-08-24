@@ -10,7 +10,7 @@ from ..versions import __version__
 import os
 from .classstring import *
 from .._misc.client import ChumsUserbotSession
-from .._misc.botclient import PandaUserbotToken
+from .._misc.botclient import ChumsUserbotToken
 from .._database import pyDatabase
 DB = pyDatabase()
 from telethon import TelegramClient
@@ -84,7 +84,7 @@ except Exception as e:
 
 try:
     if Var.STRING_SESSION and DB.get_key("BOT_TOKEN") or Database.BOT_TOKEN:
-        tgbot = PandaUserbotToken(
+        tgbot = ChumsUserbotToken(
             "BOT_TOKEN",
             api_id=Var.APP_ID,
             api_hash=Var.API_HASH,
