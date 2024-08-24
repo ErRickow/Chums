@@ -17,7 +17,7 @@ from ..Session import (
 
 
 
-def pandacute(
+def chumscute(
     pattern: str = None,
     allow_sudo: bool = True,
     disable_edited: bool = False,
