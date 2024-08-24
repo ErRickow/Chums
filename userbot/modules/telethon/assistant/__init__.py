@@ -1,7 +1,7 @@
 
 # ILHAM MANSIEZ
 # PANDA USERBOT
-from .... import tgbot, PandaBot as pandaub
+from .... import tgbot, ChumsBot as eruserbot
 
 from ....config import Config
 from ...._misc.inlinebot import *
