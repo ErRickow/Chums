@@ -34,7 +34,6 @@ prettytable
 prsaw
 psutil
 pyfiglet
-PyGithub
 pygments
 pylast
 pymediainfo
