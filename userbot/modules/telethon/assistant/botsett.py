@@ -11,14 +11,14 @@
 from telethon import Button
 
 from .... import Config
-from .... import PandaBot, tgbot
+from .... import ChumsBot, tgbot
 from ...._misc.logger import logging
 from ....helpers import reply_id
 from ....helpers.utils import _format
 
 from . import BOTLOG, BOTLOG_CHATID
 
-pandaub = PandaBot
+eruserbot = ChumsBot
 
 LOGS = logging.getLogger(__name__)
 
@@ -33,7 +33,7 @@ botusername = Config.BOT_USERNAME
 )
 async def bot_start(event):
     chat = await event.get_chat()
-    user = await pandaub.get_me()
+    user = await eruserbot.get_me()
     reply_to = await reply_id(event)
     if chat.id != Config.OWNER_ID:
         start_msg = f"Hey 🙋 {_format.mentionuser(chat.first_name , chat.id)},\
