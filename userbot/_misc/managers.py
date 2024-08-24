@@ -1,3 +1,7 @@
+# Rewrite bye er rickew @chakszzz
+# original repo from panda Userbot
+# Mit License
+
 import asyncio
 import os
 from asyncio import sleep
