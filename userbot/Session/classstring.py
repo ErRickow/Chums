@@ -15,7 +15,7 @@ from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions.string import _STRUCT_PREFORMAT, CURRENT_VERSION, StringSession
 from ..versions import __version__
 
-LOGS = logging.getLogger("PandaUserbot")
+LOGS = logging.getLogger("ErUbot")
 _PYRO_FORM = {351: ">B?256sI?", 356: ">B?256sQ?", 362: ">BI?256sQ?"}
 SESSION_STRING_FORMAT = ">BI?256sQ?"
 
@@ -30,7 +30,7 @@ DC_IPV4 = {
 }
 
 
-def PandaSession(session, logger=LOGS, _exit=True):
+def ChumsSession(session, logger=LOGS, _exit=True):
     if session:
         # Telethon Session
         if session.startswith(CURRENT_VERSION):
