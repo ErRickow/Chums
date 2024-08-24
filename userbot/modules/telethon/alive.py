@@ -3,8 +3,8 @@ from platform import python_version
 from telethon import Button, version
 import asyncio
 import sys
-from userbot import HOSTED_ON, PandaBot, SqL, StartTime, pandaversion, tgbot
-pandaub = PandaBot
+from userbot import HOSTED_ON, ChumsBot, SqL, StartTime, chumsversion, tgbot
+eruserbot = ChumsBot
 from datetime import datetime
 import random
 from userbot import Config
@@ -67,7 +67,7 @@ LOGO = Config.ALIVE_PIC = SqL.get_key("ALIVE_PIC") or f"{random.choice(alive_log
 
 usernames = Config.TG_BOT_USERNAME
 
-@PandaBot.ilhammansiz_cmd(
+@ChumsBot.ilhammansiz_cmd(
     pattern="alive$",
     command=("alive", plugin_category),
     info={
@@ -109,7 +109,7 @@ aliveess = f"""
 {CUSTOM_ALIVE_TEXT}
 
 ☉ 𝐎𝐖𝐍𝐄𝐑: {NAME}
-☉ 𝗩𝗘𝗥𝗦𝗜𝗢𝗡: `𝚅{pandaversion}`
+☉ 𝗩𝗘𝗥𝗦𝗜𝗢𝗡: `𝚅{chumsversion}`
 ☉ 𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍: `𝚅{version.__version__}`
 ☉ 𝐏𝐘𝐓𝐇𝐎𝐍: `𝚅{python_version()}`\n
 ༻༺༻༺༻༺༻༺
