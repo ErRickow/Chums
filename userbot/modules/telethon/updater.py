@@ -7,7 +7,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 from ... import __version__
 from ...config import Config
 from . import HEROKU_API_KEY, HEROKU_APP_NAME
-from . import edit_delete, edit_or_reply, PandaBot
+from . import edit_delete, edit_or_reply, ChumsBot
 plugin_category = "modules"
 cmd = Config.COMMAND_HAND_LER
 
@@ -103,7 +103,7 @@ async def update(xx, repo, ups_rem, ac_br):
         ups_rem.pull(ac_br)
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
-    await event.reply(
+    await edit_or_reply(
         xx, "`Chums Userbot Berhasil Diupdate! Mohon bersabarr...`"
     )
 
@@ -120,7 +120,7 @@ async def update(xx, repo, ups_rem, ac_br):
     execle(sys.executable, *args, environ)
 
 
-@PandaBot.ilhammansiz_cmd(
+@ChumsBot.ilhammansiz_cmd(
     pattern="update(| now)?$",
     command=("update", plugin_category),
     info={
