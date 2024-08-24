@@ -11,17 +11,17 @@ from redis import StrictRedis
 
 import sys
 import os
-from .database import *
+from ._database import *
 DB = pyDatabase()
 SqL = DB
 udB = DB
 import time
 import ublackdev
-from session import *
+from .Session import *
 from .versions import __version__
 import logging
 from .versions import __version__, __license__, __author__, __copyright__
-from .helper import gen, regex
+from ._helper import gen, regex
 
 DEVLIST = ublackdev.plist
 DEVS = DEVLIST
@@ -33,7 +33,7 @@ __license__ = __license__
 __author__ = __author__
 __copyright__ = __copyright__
 
-pandaversion = __version__
+chumsversion = __version__
 StartTime = time.time()
 BOT_MODE = SqL.get_key("MODE_DUAL")
 DUAL_MODE = SqL.get_key("DUAL_MODE")
@@ -59,10 +59,10 @@ INT_PLUG = ""
 LOAD_PLUG = {}
 
 
-bot = ErBot
-eruserbot = ErBot
-botvc = ErBot
-Stark = ErBot
+bot = ChumsBot
+eruserbot = ChumsBot
+botvc = ChumsBot
+Stark = ChumsBot
 petercordchums_bot = eruserbot
 
 def dual_mode():
@@ -82,7 +82,7 @@ def dual_mode():
 from .config import *
 
 
-if Config.UPSTREAM_REPO == "Chums":
+if Config.UPSTREAM_REPO == "CHUMS_USERBOT":
     UPSTREAM_REPO_URL = "https://github.com/ErRickow/Chums"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
@@ -156,13 +156,13 @@ async def update_user(chat_id, msg_id):
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
-    await ErBot.edit_message(chat_id, msg_id, message)
+    await ChumsBot.edit_message(chat_id, msg_id, message)
     return True
 
 
 try:
     chat_id, msg_id = gvarstatus("restartstatus").split("\n")
-    with ErBot:
+    with ChumsBot:
         try:
             LOOP.run_until_complete(update_user(int(chat_id), int(msg_id)))
         except BaseException:
