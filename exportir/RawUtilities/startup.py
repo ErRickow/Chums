@@ -30,7 +30,7 @@ from userbot.version import __version__ as botvers
 
 LOGS = logging.getLogger("ErUbot")
 cmdhr = Config.COMMAND_HAND_LER
-pandaub = ChumsBot
+eruserbot = ChumsBot
 
 async def setup_bot():
     try:
@@ -76,7 +76,7 @@ async def ipchange():
         delgvar("ipaddress")
         LOGS.info("Ip Change detected")
         try:
-            await pandaub.disconnect()
+            await eruserbot.disconnect()
         except (ConnectionError, CancelledError):
             pass
         return "ip change"
@@ -111,7 +111,7 @@ async def loads(folder):
                 else:
                     os.remove(Path(f"userbot/{folder}/{shortname}.py"))
             except Exception as e:
-                os.remove(Path(f"Panda/{folder}/{shortname}.py"))
+                os.remove(Path(f"Chums/{folder}/{shortname}.py"))
                 LOGS.info(f"Gagal membuka file {shortname} dikarenakan error {e}")
 
 
@@ -275,7 +275,7 @@ async def verifyLoggerGroup():
     flag = False
     if BOTLOG:
         try:
-            entity = await pandaub.get_entity(BOTLOG_CHATID)
+            entity = await eruserbot.get_entity(BOTLOG_CHATID)
             if not isinstance(entity, types.User) and not entity.creator:
                 if entity.default_banned_rights.send_messages:
                     LOGS.info(
@@ -301,7 +301,7 @@ async def verifyLoggerGroup():
     else:
         descript = "Don't delete this group or change to group(If you change group all your previous snips, welcome will be lost.)"
         _, groupid = await create_supergroup(
-            "ErUbot BotLog Group", pandaub, Config.TG_BOT_USERNAME, descript
+            "ErUbot BotLog Group", eruserbot, Config.TG_BOT_USERNAME, descript
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
@@ -310,7 +310,7 @@ async def verifyLoggerGroup():
         flag = True
     if PM_LOGGER_GROUP_ID != -100:
         try:
-            entity = await pandaub.get_entity(PM_LOGGER_GROUP_ID)
+            entity = await eruserbot.get_entity(PM_LOGGER_GROUP_ID)
             if not isinstance(entity, types.User) and not entity.creator:
                 if entity.default_banned_rights.send_messages:
                     LOGS.info(
