@@ -162,10 +162,10 @@ async def covidindia(state):
 
 async def hide_inlinebot(borg, bot_name, text, chat_id, reply_to_id, c_lick=0):
     sticcers = await borg.inline_query(bot_name, f"{text}.")
-    panda = await sticcers[c_lick].click("me", hide_via=True)
-    if panda:
-        await borg.send_file(int(chat_id), panda, reply_to=reply_to_id)
-        await panda.delete()
+    chums = await sticcers[c_lick].click("me", hide_via=True)
+    if chums:
+        await borg.send_file(int(chat_id), chums, reply_to=reply_to_id)
+        await chums.delete()
 
 
 # for stickertxt
@@ -205,7 +205,7 @@ async def waifutxt(text, chat_id, reply_to_id, bot):
         63,
     ]
     sticcers = await bot.inline_query("stickerizerbot", f"#{choice(animus)}{text}")
-    panda = await sticcers[0].click("me", hide_via=True)
-    if panda:
+    chums = await sticcers[0].click("me", hide_via=True)
+    if chums:
         await bot.send_file(int(chat_id), cat, reply_to=reply_to_id)
-        await panda.delete()
+        await chums.delete()
