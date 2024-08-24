@@ -29,7 +29,7 @@ __Thn__ = "2024"
 
 
 __python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
-__license__ = "GNU Affero General Public License v3.0"
+__license__ = "MIT"
 __author__ = "Chums_Userbot <https://github.com/ErRickow/Chums>"
 __copyright__ = "Chums Userbot [©] 2 0 2 4 [3R]  " + __author__
 
