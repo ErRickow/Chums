@@ -36,7 +36,7 @@ LOGS = logging.getLogger(__name__)
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 
 tr = Config.COMMAND_HAND_LER
-pandaub = ChumsBot
+eruserbot = ChumsBot
 
 ilhammansiez = Config.CHUMS_LOGO_HELP = SqL.get_key("CHUMS_LOGO_HELP") or "https://telegra.ph/file/ccbc25f1c295310902070.jpg"
 
