@@ -17,7 +17,7 @@ from telethon.events import CallbackQuery
 from telethon.utils import get_attributes
 from wget import download
 
-from .... import PandaBot, tgbot
+from .... import ChumsBot, tgbot
 
 from ....config import Config
 from ...._misc import check_owner, pool
@@ -33,7 +33,7 @@ from ....helpers.functions.utube import (
     yt_search_btns,
 )
 from userbot.modules.telethon import BOTLOG_CHATID
-pandaub = PandaBot
+pandaub = ChumsBot
 LOGS = logging.getLogger(__name__)
 BASE_YT_URL = "https://www.youtube.com/watch?v="
 YOUTUBE_REGEX = re.compile(
@@ -43,7 +43,7 @@ PATH = "./userbot/_misc/ytsearch.json"
 plugin_category = "plugins"
 
 
-@PandaBot.ilhammansiz_cmd(
+@ChumsBot.ilhammansiz_cmd(
     pattern="iytdl(?: |$)(.*)",
     command=("iytdl", plugin_category),
     info={
