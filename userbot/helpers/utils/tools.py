@@ -26,51 +26,51 @@ async def media_to_pic(event, reply, noedits=False):
     ]:
         return event, None
     if not noedits:
-        pandaevent = await edit_or_reply(
+        chumsevent = await edit_or_reply(
             event, f"`Transfiguration Time! Converting to ....`"
         )
     else:
-        pandaevent = event
-    pandamedia = None
-    pandafile = os.path.join("./temp/", "meme.png")
-    if os.path.exists(pandafile):
-        os.remove(pandafile)
+        chumsevent = event
+    chumsmedia = None
+    chumsfile = os.path.join("./temp/", "meme.png")
+    if os.path.exists(chumsfile):
+        os.remove(chumsfile)
     if mediatype == "Photo":
-        pandamedia = await reply.download_media(file="./temp")
-        im = Image.open(pandamedia)
-        im.save(pandafile)
+        chumsmedia = await reply.download_media(file="./temp")
+        im = Image.open(chumsmedia)
+        im.save(chumsfile)
     elif mediatype in ["Audio", "Voice"]:
-        await event.client.download_media(reply, pandafile, thumb=-1)
+        await event.client.download_media(reply, chumsfile, thumb=-1)
     elif mediatype == "Sticker":
-        pandamedia = await reply.download_media(file="./temp")
-        if pandamedia.endswith(".tgs"):
+        chumsmedia = await reply.download_media(file="./temp")
+        if chumsmedia.endswith(".tgs"):
             await runcmd(
-                f"lottie_convert.py --frame 0 -if lottie -of png '{pandamedia}' '{pandafile}'"
+                f"lottie_convert.py --frame 0 -if lottie -of png '{chumsmedia}' '{chumsfile}'"
             )
-        elif pandamedia.endswith(".webp"):
-            im = Image.open(pandamedia)
-            im.save(pandafile)
+        elif chumsmedia.endswith(".webp"):
+            im = Image.open(chumsmedia)
+            im.save(chumsfile)
     elif mediatype in ["Round Video", "Video", "Gif"]:
-        await event.client.download_media(reply, pandafile, thumb=-1)
-        if not os.path.exists(pandafile):
-            pandamedia = await reply.download_media(file="./temp")
+        await event.client.download_media(reply, chumsfile, thumb=-1)
+        if not os.path.exists(chumsfile):
+            chumsmedia = await reply.download_media(file="./temp")
             clip = VideoFileClip(media)
             try:
-                clip = clip.save_frame(pandafile, 0.1)
+                clip = clip.save_frame(chumsfile, 0.1)
             except:
-                clip = clip.save_frame(pandafile, 0)
+                clip = clip.save_frame(chumsfile, 0)
     elif mediatype == "Document":
         mimetype = reply.document.mime_type
         mtype = mimetype.split("/")
         if mtype[0].lower() == "image":
-            pandamedia = await reply.download_media(file="./temp")
-            im = Image.open(pandamedia)
-            im.save(pandafile)
-    if pandamedia and os.path.exists(pandamedia):
-        os.remove(pandamedia)
-    if os.path.exists(pandafile):
-        return pandaevent, pandafile, mediatype
-    return pandaevent, None
+            chumsmedia = await reply.download_media(file="./temp")
+            im = Image.open(chumsmedia)
+            im.save(chumsfile)
+    if chumsmedia and os.path.exists(chumsmedia):
+        os.remove(chumsmedia)
+    if os.path.exists(chumsfile):
+        return chumsevent, chumsfile, mediatype
+    return chumsevent, None
 
 
 async def take_screen_shot(
