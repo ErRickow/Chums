@@ -33,7 +33,7 @@ from ....helpers.functions.utube import (
     yt_search_btns,
 )
 from userbot.modules.telethon import BOTLOG_CHATID
-pandaub = ChumsBot
+eruserbot = ChumsBot
 LOGS = logging.getLogger(__name__)
 BASE_YT_URL = "https://www.youtube.com/watch?v="
 YOUTUBE_REGEX = re.compile(
