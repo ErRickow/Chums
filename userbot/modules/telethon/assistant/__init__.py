@@ -189,7 +189,7 @@ def ilhammansiz(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**PandaX_Userbot ERROR**\n"
+                    text = "**Chums Userbot ERROR**\n"
                     link = "Silahkan chat: @bismillahselaluadaa"
                     text += "Untuk melaporkan kesalahan"
                     text += f"- tinggal teruskan pesan ini {link}.\n"
