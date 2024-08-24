@@ -5,7 +5,7 @@
 # Dibuat dari berbagai userbot yang pernah ada.
 # t.me/pandac0de t.me/pandauserbot
 
-from userbot import tgbot, PandaBot as pandaub
+from userbot import tgbot, ChumsBot as eruserbot
 from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.events import InlineQuery
 from telethon.tl.types import (
@@ -19,7 +19,7 @@ def sudoers():
     return _sudousers_list()
 
 def owner_and_sudos():
-    return [str(pandaub.uid), *sudoers()]
+    return [str(eruserbot.uid), *sudoers()]
 
 
 def in_pattern(pat):
