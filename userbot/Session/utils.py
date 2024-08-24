@@ -22,10 +22,10 @@ class Utils(Methods, Config, Database, Helpers):
     python_version = str(platform.python_version())
     pyrogram_version = str(pyro_version)
     CMD_HELP = {}
-    owner_name = "Ilham Mansiz"
+    owner_name = "Er Rickow"
     owner_id = f"{ublackdev.plist}"
-    owner_username = "@diemmmmmmmmmm"
-    Repo = "https://github.com/ilhammansiz/PandaX_Userbot.git"
+    owner_username = "@chakszzz"
+    Repo = "https://porn.hub"
     StartTime = time.time()
     logging.getLogger("pyrogram.syncer").setLevel(
         logging.CRITICAL
@@ -35,5 +35,5 @@ class Utils(Methods, Config, Database, Helpers):
     log = logging.getLogger("———")
     telegraph = Telegraph()
     telegraph.create_account(
-        short_name=Config.TL_NAME if Config.TL_NAME else "Panda Userbot"
+        short_name=Config.TL_NAME if Config.TL_NAME else "Chums Userbot"
     )
