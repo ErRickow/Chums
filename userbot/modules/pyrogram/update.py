@@ -107,13 +107,13 @@ async def update_handler(_, m):
                 )
                 remove("up_output.txt")
             else:
-                return await app.send_edit(
+                return await app.reply(
                     m,
                     f"{changelog_str}\n\n[ UPDATE ]: Do `.update now` to update.",
                     disable_web_page_preview=True,
                 )
         else:
-            await app.send_edit(
+            await m.reply(
                 m,
                 f"**[ STATUS ]:** Your bot is upto date !\n**[ VERSION ]:** `{app.userbot_version}`\n**[ BRANCH ]:** [{ACTIVE_BRANCH}]({_REPO}/tree/{ACTIVE_BRANCH})",
                 disable_web_page_preview=True,
