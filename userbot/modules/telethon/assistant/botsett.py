@@ -39,7 +39,7 @@ async def bot_start(event):
         start_msg = f"Hey 🙋 {_format.mentionuser(chat.first_name , chat.id)},\
                     \nSaya {_format.mentionuser(user.first_name , user.id)}' Assistant_bot.\
                     \nKamu Bisa Setting saya disini dan Daftar menu perintah Saya sebagai Asistantmu.\
-                    \n\nPowered by @PandaUserbot"
+                    \n\nPowered by @Pamerdong, @Asist3R && @Chakszzz"
         buttons = [
             (
                 Button.inline("🌀 INFO 🌀", data="menubot"),
