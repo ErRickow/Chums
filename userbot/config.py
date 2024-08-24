@@ -76,7 +76,7 @@ class Database(object):
     PyroSESSION2 = os.environ.get("PyroSESSION2", None)
     PyroSESSION3 = os.environ.get("PyroSESSION3", None)
     PyroSESSION4 = os.environ.get("PyroSESSION4", None)
-    DB_URIl = os.environ.get("DATABASES_URL", "mongodb+srv://petercord:b38DJZL3X6zhnHJ0@cluster0.e9xau.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    DB_URIl = os.environ.get("DATABASES_URL", None)
 
 ## Osdb
 
@@ -98,7 +98,7 @@ class Osdb(object):
     WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "ID")
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
-    UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/ilhammansiz/PandaX_Userbot.git")
+    UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/ErRickow/Chums.git")
     S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
     OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
@@ -148,7 +148,7 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API", None)
 WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "ID")
 GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/ilhammansiz/PandaX_Userbot.git")
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/ErRickow/Chums.git")
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
@@ -181,7 +181,7 @@ WHITELIST = [5057493677, 1593802955]
 DEFAULT = [1593802955]
 DEVS = [5057493677, 1593802955]
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Panda")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Chums")
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡")
 INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "᪥")
 ICON_HELP = os.environ.get("ICON_HELP", "❈")
@@ -280,7 +280,7 @@ class Config(object):
     TG_BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     TZ = SqL.get_key("TZ") or os.environ.get("TZ", "Asia/Jakarta") 
     UPSTREAM_REPO = SqL.get_key("UPSTREAM_REPO") or os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/ErRickow/Chums.git"
+        "UPSTREAM_REPO", "https://github.com/ErRickow/Chums"
     ) 
     BOT_TOKEN = SqL.get_key("BOT_TOKEN") or TG_BOT_TOKEN 
     BOT_USERNAME = SqL.get_key("BOT_USERNAME") or TG_BOT_USERNAME
