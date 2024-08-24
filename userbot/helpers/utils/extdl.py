@@ -1,3 +1,7 @@
+#MIT License
+
+#Copyright (c) 2024 Just R
+
 from subprocess import PIPE, Popen
 
 
