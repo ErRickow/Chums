@@ -129,7 +129,7 @@ async def convert_image_to_image_note(input_path):
     draw.pieslice([0,0,h,w],0,360,fill=255)
     npAlpha = np.array(alpha)
     npImage = np.dstack((npImage,npAlpha))
-    img_path = 'converted_by_UbotPanda.webp'
+    img_path = 'converted_by_ChumsUb.webp'
     Image.fromarray(npImage).save(img_path)
     return img_path
 
