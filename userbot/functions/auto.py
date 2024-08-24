@@ -212,7 +212,7 @@ async def autobot():
             await mansizbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await mansizbot.send_message(
-            bf, f"🙋 Hello ✨ Saya PandaX_Userbot Assistant"
+            bf, f"🙋 Allo Gw Chums Assistant"
             )
             await asyncio.sleep(2)
             await mansizbot.send_message(bf, "/setdescription")
@@ -220,7 +220,7 @@ async def autobot():
             await mansizbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await mansizbot.send_message(
-            bf, f"PandaX_Userbot Assistant\n\nBy ~ @diemmmmmmmmmm\nSupport ~ @TEAMSquadUserbotSupport ",
+            bf, f"Chums Assistant Userbot\n\nBy ~ @chakszzz\nSupport ~ @pamerdong ",
             )
             LOGS.info(f"Ok, Sekarang Buat grupnya ya bangsat")
             try:
@@ -293,7 +293,7 @@ async def autobot():
         await mansizbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await mansizbot.send_message(
-        bf, f"🙋 Hello ✨ Saya PandaX_Userbot Assistant"
+        bf, f"🙋 Allo Gw Adalah Chums Assistant"
         )
         await asyncio.sleep(2)
         await mansizbot.send_message(bf, "/setdescription")
