@@ -29,7 +29,7 @@ def start():
     #userbot.LOOP.run_until_complete(resources.cloneplugins())
     #userbot.LOOP.run_until_complete(resources.clonevc())
     userbot.LOOP.run_until_complete(resources.join())
-    LOGS.info(f"꧁༺ Panda Userbot ༻꧂\n⚙️ Version:{userbot.__version__} [TELAH DIAKTIFKAN]")
+    LOGS.info(f"꧁༺ Chums Userbot ༻꧂\n⚙️ Version:{userbot.__version__} [TELAH DIAKTIFKAN]")
     if ChumsBot:
         ChumsBot.send_message(PRIVATE, THON_ON.format(ChumsBot.me.username, userbot.__version__, cmdhr, total))
     if ChumsBot2:
