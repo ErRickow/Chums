@@ -57,7 +57,7 @@ def envbot():
 def Zip():
     global regex
     regex='(https?)://github.com/.+/.+'
-    if UPSTREAM_REPO == "PANDA_USERBOT":
+    if UPSTREAM_REPO == "CHUMS_USERBOT":
         Zip = "aHR0cHM6Ly9naXRodWIuY29tL0FsbFRlYW1QYW5kYS9QYW5kYVhfVXNlcmJvdC9hcmNoaXZlL21haW4uemlw"
         code = Zip.encode()
         msg = b64decode(code)
