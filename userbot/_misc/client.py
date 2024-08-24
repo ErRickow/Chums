@@ -211,7 +211,7 @@ class ChumsUserbotSession(TelegramClient):
                         result = output[0] + output[1]
                         ftext += result
                         pastelink = ftext
-                        text = "**PandaUserbot Error report**\n\n"
+                        text = "**Chums Userbot Error report**\n\n"
                         link = "[Klik](https://t.me/TEAMSquadUserbotSupport)"
                         text += f"- Forward and join support grup {link}.\n"
                         text += f"**Error Code : ** [{new['error']}]({pastelink})"
@@ -219,7 +219,7 @@ class ChumsUserbotSession(TelegramClient):
                             Config.PRIVATE_GROUP_BOT_API_ID, text, link_preview=False
                         )
 
-            from .session import PandaBot, PandaBot2, PandaBot3, PandaBot4, PandaBot5, PandaBot6, PandaBot7, PandaBot8, PandaBot9, PandaBot10, PandaBot11, PandaBot12, PandaBot13, PandaBot14, PandaBot15, PandaBot16, PandaBot17, PandaBot18, PandaBot19, PandaBot10, PandaBot20, PandaBot21, PandaBot22, PandaBot23, PandaBot24, PandaBot25, PandaBot26, PandaBot27, PandaBot28, PandaBot29, PandaBot30, PandaBot31, PandaBot32, PandaBot33, PandaBot34, PandaBot35, PandaBot36, PandaBot37, PandaBot38, PandaBot39, PandaBot40, PandaBot41, PandaBot42, PandaBot43, PandaBot44, PandaBot45, PandaBot46, PandaBot47, PandaBot48, PandaBot49, PandaBot50, tgbot
+            from .session import ChumsBot, ChumsBot2, ChumsBot3, ChumsBot4, ChumsBot5, ChumsBot6, ChumsBot7, ChumsBot8, ChumsBot9, ChumsBot10, ChumsBot11, ChumsBot12, ChumsBot13, ChumsBot14, ChumsBot15, ChumsBot16, ChumsBot17, ChumsBot18, ChumsBot19, ChumsBot10, ChumsBot20, ChumsBot21, ChumsBot22, ChumsBot23, ChumsBot24, ChumsBot25, ChumsBot26, ChumsBot27, ChumsBot28, ChumsBot29, ChumsBot30, ChumsBot31, ChumsBot32, ChumsBot33, ChumsBot34, ChumsBot35, ChumsBot36, ChumsBot37, ChumsBot38, ChumsBot39, ChumsBot40, ChumsBot41, ChumsBot42, ChumsBot43, ChumsBot44, ChumsBot45, ChumsBot46, ChumsBot47, ChumsBot48, ChumsBot49, ChumsBot50, tgbot
           
             if not func.__doc__ is None:
                 CMD_INFO[command[0]].append((func.__doc__).strip())
@@ -231,503 +231,503 @@ class ChumsUserbotSession(TelegramClient):
                         LOADED_CMDS[command[0]].append(wrapper)
                     except BaseException:
                         LOADED_CMDS.update({command[0]: [wrapper]})
-                if PandaBot:
+                if ChumsBot:
                     if edited:
-                        PandaBot.add_event_handler(
+                        ChumsBot.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot.add_event_handler(
+                    ChumsBot.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot2:
+                if ChumsBot2:
                     if edited:
-                        PandaBot2.add_event_handler(
+                        ChumsBot2.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot2.add_event_handler(
+                    ChumsBot2.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot3:
+                if ChumsBot3:
                     if edited:
-                        PandaBot3.add_event_handler(
+                        ChumsBot3.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot3.add_event_handler(
+                    ChumsBot3.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot4:
+                if ChumsBot4:
                     if edited:
-                        PandaBot4.add_event_handler(
+                        ChumsBot4.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot4.add_event_handler(
+                    ChumsBot4.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot5:
+                if ChumsBot5:
                     if edited:
-                        PandaBot5.add_event_handler(
+                        ChumsBot5.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot5.add_event_handler(
+                    ChumsBot5.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot6:
+                if ChumsBot6:
                     if edited:
-                        PandaBot6.add_event_handler(
+                        ChumsBot6.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot6.add_event_handler(
+                    ChumsBot6.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot7:
+                if ChumsBot7:
                     if edited:
-                        PandaBot7.add_event_handler(
+                        ChumsBot7.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot7.add_event_handler(
+                    ChumsBot7.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot8:
+                if ChumsBot8:
                     if edited:
-                        PandaBot8.add_event_handler(
+                        ChumsBot8.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot8.add_event_handler(
+                    ChumsBot8.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot9:
+                if ChumsBot9:
                     if edited:
-                        PandaBot9.add_event_handler(
+                        ChumsBot9.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot9.add_event_handler(
+                    ChumsBot9.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot10:
+                if ChumsBot10:
                     if edited:
-                        PandaBot10.add_event_handler(
+                        ChumsBot10.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot10.add_event_handler(
+                    ChumsBot10.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot11:
+                if ChumsBot11:
                     if edited:
-                        PandaBot11.add_event_handler(
+                        ChumsBot11.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot11.add_event_handler(
+                    ChumsBot11.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot12:
+                if ChumsBot12:
                     if edited:
-                        PandaBot12.add_event_handler(
+                        ChumsBot12.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot12.add_event_handler(
+                    ChumsBot12.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot13:
+                if ChumsBot13:
                     if edited:
-                        PandaBot13.add_event_handler(
+                        ChumsBot13.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot13.add_event_handler(
+                    ChumsBot13.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot14:
+                if ChumsBot14:
                     if edited:
-                        PandaBot14.add_event_handler(
+                        ChumsBot14.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot14.add_event_handler(
+                    ChumsBot14.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot15:
+                if ChumsBot15:
                     if edited:
-                        PandaBot15.add_event_handler(
+                        ChumsBot15.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot15.add_event_handler(
+                    ChumsBot15.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot16:
+                if ChumsBot16:
                     if edited:
-                        PandaBot16.add_event_handler(
+                        ChumsBot16.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot16.add_event_handler(
+                    ChumsBot16.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot17:
+                if ChumsBot17:
                     if edited:
-                        PandaBot17.add_event_handler(
+                        ChumsBot17.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot17.add_event_handler(
+                    ChumsBot17.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot18:
+                if ChumsBot18:
                     if edited:
-                        PandaBot18.add_event_handler(
+                        ChumsBot18.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot18.add_event_handler(
+                    ChumsBot18.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot19:
+                if ChumsBot19:
                     if edited:
-                        PandaBot19.add_event_handler(
+                        ChumsBot19.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot19.add_event_handler(
+                    ChumsBot19.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot20:
+                if ChumsBot20:
                     if edited:
-                        PandaBot20.add_event_handler(
+                        ChumsBot20.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot20.add_event_handler(
+                    ChumsBot20.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot21:
+                if ChumsBot21:
                     if edited:
-                        PandaBot21.add_event_handler(
+                        ChumsBot21.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot21.add_event_handler(
+                    ChumsBot21.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot22:
+                if ChumsBot22:
                     if edited:
-                        PandaBot22.add_event_handler(
+                        ChumsBot22.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot22.add_event_handler(
+                    ChumsBot22.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot23:
+                if ChumsBot23:
                     if edited:
-                        PandaBot23.add_event_handler(
+                        ChumsBot23.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot23.add_event_handler(
+                    ChumsBot23.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot24:
+                if ChumsBot24:
                     if edited:
-                        PandaBot24.add_event_handler(
+                        ChumsBot24.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot24.add_event_handler(
+                    ChumsBot24.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot25:
+                if ChumsBot25:
                     if edited:
-                        PandaBot25.add_event_handler(
+                        ChumsBot25.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot25.add_event_handler(
+                    ChumsBot25.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot26:
+                if ChumsBot26:
                     if edited:
-                        PandaBot26.add_event_handler(
+                        ChumsBot26.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot26.add_event_handler(
+                    ChumsBot26.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot27:
+                if ChumsBot27:
                     if edited:
-                        PandaBot27.add_event_handler(
+                        ChumsBot27.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot27.add_event_handler(
+                    ChumsBot27.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot28:
+                if ChumsBot28:
                     if edited:
-                        PandaBot28.add_event_handler(
+                        ChumsBot28.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot28.add_event_handler(
+                    ChumsBot28.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot29:
+                if ChumsBot29:
                     if edited:
-                        PandaBot29.add_event_handler(
+                        ChumsBot29.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot29.add_event_handler(
+                    ChumsBot29.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot30:
+                if ChumsBot30:
                     if edited:
-                        PandaBot30.add_event_handler(
+                        ChumsBot30.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot30.add_event_handler(
+                    ChumsBot30.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot31:
+                if ChumsBot31:
                     if edited:
-                        PandaBot31.add_event_handler(
+                        ChumsBot31.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot31.add_event_handler(
+                    ChumsBot31.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot32:
+                if ChumsBot32:
                     if edited:
-                        PandaBot32.add_event_handler(
+                        ChumsBot32.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot32.add_event_handler(
+                    ChumsBot32.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot33:
+                if ChumsBot33:
                     if edited:
-                        PandaBot33.add_event_handler(
+                        ChumsBot33.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot33.add_event_handler(
+                    ChumsBot33.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot34:
+                if ChumsBot34:
                     if edited:
-                        PandaBot34.add_event_handler(
+                        ChumsBot34.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot34.add_event_handler(
+                    ChumsBot34.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot35:
+                if ChumsBot35:
                     if edited:
-                        PandaBot35.add_event_handler(
+                        ChumsBot35.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot35.add_event_handler(
+                    ChumsBot35.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot36:
+                if ChumsBot36:
                     if edited:
-                        PandaBot36.add_event_handler(
+                        ChumsBot36.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot36.add_event_handler(
+                    ChumsBot36.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot37:
+                if ChumsBot37:
                     if edited:
-                        PandaBot37.add_event_handler(
+                        ChumsBot37.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot37.add_event_handler(
+                    ChumsBot37.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot38:
+                if ChumsBot38:
                     if edited:
-                        PandaBot38.add_event_handler(
+                        ChumsBot38.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot38.add_event_handler(
+                    ChumsBot38.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot39:
+                if ChumsBot39:
                     if edited:
-                        PandaBot39.add_event_handler(
+                        ChumsBot39.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot39.add_event_handler(
+                    ChumsBot39.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot40:
+                if ChumsBot40:
                     if edited:
-                        PandaBot40.add_event_handler(
+                        ChumsBot40.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot40.add_event_handler(
+                    ChumsBot40.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot41:
+                if ChumsBot41:
                     if edited:
-                        PandaBot41.add_event_handler(
+                        ChumsBot41.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot41.add_event_handler(
+                    ChumsBot41.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot42:
+                if ChumsBot42:
                     if edited:
-                        PandaBot42.add_event_handler(
+                        ChumsBot42.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot42.add_event_handler(
+                    ChumsBot42.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot43:
+                if ChumsBot43:
                     if edited:
-                        PandaBot43.add_event_handler(
+                        ChumsBot43.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot43.add_event_handler(
+                    ChumsBot43.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot44:
+                if ChumsBot44:
                     if edited:
-                        PandaBot44.add_event_handler(
+                        ChumsBot44.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot44.add_event_handler(
+                    ChumsBot44.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot45:
+                if ChumsBot45:
                     if edited:
-                        PandaBot45.add_event_handler(
+                        ChumsBot45.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot45.add_event_handler(
+                    ChumsBot45.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot46:
+                if ChumsBot46:
                     if edited:
-                        PandaBot46.add_event_handler(
+                        ChumsBot46.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot46.add_event_handler(
+                    ChumsBot46.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot47:
+                if ChumsBot47:
                     if edited:
-                        PandaBot47.add_event_handler(
+                        ChumsBot47.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot47.add_event_handler(
+                    ChumsBot47.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot48:
+                if ChumsBot48:
                     if edited:
-                        PandaBot48.add_event_handler(
+                        ChumsBot48.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot48.add_event_handler(
+                    ChumsBot48.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot49:
+                if ChumsBot49:
                     if edited:
-                        PandaBot49.add_event_handler(
+                        ChumsBot49.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot49.add_event_handler(
+                    ChumsBot49.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
-                if PandaBot50:
+                if ChumsBot50:
                     if edited:
-                        PandaBot50.add_event_handler(
+                        ChumsBot50.add_event_handler(
                             wrapper,
                             MessageEdited(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                         )
-                    PandaBot50.add_event_handler(
+                    ChumsBot50.add_event_handler(
                         wrapper,
                         NewMessage(pattern=REGEX_.regex1, outgoing=True, **kwargs),
                     )
@@ -743,9 +743,9 @@ class ChumsUserbotSession(TelegramClient):
                 )
                 if dev is not None:
                     if command is not None or command[0]:
-                        if PandaBot:
+                        if ChumsBot:
                             if edited:
-                                PandaBot.add_event_handler(
+                                ChumsBot.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.dev,
@@ -753,7 +753,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot.add_event_handler(
+                            ChumsBot.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.dev,
@@ -761,9 +761,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot2:
+                        if ChumsBot2:
                             if edited:
-                                PandaBot2.add_event_handler(
+                                ChumsBot2.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.dev,
@@ -771,7 +771,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot2.add_event_handler(
+                            ChumsBot2.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.dev,
@@ -779,9 +779,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot3:
+                        if ChumsBot3:
                             if edited:
-                                PandaBot3.add_event_handler(
+                                ChumsBot3.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.dev,
@@ -789,7 +789,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot3.add_event_handler(
+                            ChumsBot3.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.dev,
@@ -817,9 +817,9 @@ class ChumsUserbotSession(TelegramClient):
                         )
                 if allow_sudo and pdB.get_key("sudoenable") is not None:
                     if command is None or command[0] in sudo_enabledcmds:
-                        if PandaBot:
+                        if ChumsBot:
                             if edited:
-                                PandaBot.add_event_handler(
+                                ChumsBot.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -827,7 +827,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot.add_event_handler(
+                            ChumsBot.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -835,9 +835,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot2:
+                        if ChumsBot2:
                             if edited:
-                                PandaBot2.add_event_handler(
+                                ChumsBot2.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -845,7 +845,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot2.add_event_handler(
+                            ChumsBot2.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -853,9 +853,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot3:
+                        if ChumsBot3:
                             if edited:
-                                PandaBot3.add_event_handler(
+                                ChumsBot3.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -863,7 +863,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot3.add_event_handler(
+                            ChumsBot3.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -871,9 +871,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot4:
+                        if ChumsBot4:
                             if edited:
-                                PandaBot4.add_event_handler(
+                                ChumsBot4.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -881,7 +881,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot4.add_event_handler(
+                            ChumsBot4.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -889,9 +889,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot5:
+                        if ChumsBot5:
                             if edited:
-                                PandaBot5.add_event_handler(
+                                ChumsBot5.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -899,7 +899,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot5.add_event_handler(
+                            ChumsBot5.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -907,9 +907,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot6:
+                        if ChumsBot6:
                             if edited:
-                                PandaBot6.add_event_handler(
+                                ChumsBot6.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -917,7 +917,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot6.add_event_handler(
+                            ChumsBot6.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -925,9 +925,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot7:
+                        if ChumsBot7:
                             if edited:
-                                PandaBot7.add_event_handler(
+                                ChumsBot7.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -935,7 +935,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot7.add_event_handler(
+                            ChumsBot7.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -943,9 +943,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot8:
+                        if ChumsBot8:
                             if edited:
-                                PandaBot8.add_event_handler(
+                                ChumsBot8.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -953,7 +953,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot8.add_event_handler(
+                            ChumsBot8.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -961,9 +961,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot9:
+                        if ChumsBot9:
                             if edited:
-                                PandaBot9.add_event_handler(
+                                ChumsBot9.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -971,7 +971,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot9.add_event_handler(
+                            ChumsBot9.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -979,9 +979,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot10:
+                        if ChumsBot10:
                             if edited:
-                                PandaBot10.add_event_handler(
+                                ChumsBot10.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -989,7 +989,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot10.add_event_handler(
+                            ChumsBot10.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -997,9 +997,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot11:
+                        if ChumsBot11:
                             if edited:
-                                PandaBot11.add_event_handler(
+                                ChumsBot11.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1007,7 +1007,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot11.add_event_handler(
+                            ChumsBot11.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1015,9 +1015,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot12:
+                        if ChumsBot12:
                             if edited:
-                                PandaBot12.add_event_handler(
+                                ChumsBot12.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1025,7 +1025,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot12.add_event_handler(
+                            ChumsBot12.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1033,9 +1033,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot13:
+                        if ChumsBot13:
                             if edited:
-                                PandaBot13.add_event_handler(
+                                ChumsBot13.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1043,7 +1043,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot13.add_event_handler(
+                            ChumsBot13.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1051,9 +1051,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot14:
+                        if ChumsBot14:
                             if edited:
-                                PandaBot14.add_event_handler(
+                                ChumsBot14.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1061,7 +1061,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot14.add_event_handler(
+                            ChumsBot14.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1069,9 +1069,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot15:
+                        if ChumsBot15:
                             if edited:
-                                PandaBot15.add_event_handler(
+                                ChumsBot15.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1079,7 +1079,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot15.add_event_handler(
+                            ChumsBot15.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1087,9 +1087,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot16:
+                        if ChumsBot16:
                             if edited:
-                                PandaBot16.add_event_handler(
+                                ChumsBot16.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1097,7 +1097,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot16.add_event_handler(
+                            ChumsBot16.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1105,9 +1105,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot17:
+                        if ChumsBot17:
                             if edited:
-                                PandaBot17.add_event_handler(
+                                ChumsBot17.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1115,7 +1115,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot17.add_event_handler(
+                            ChumsBot17.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1123,9 +1123,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot18:
+                        if ChumsBot18:
                             if edited:
-                                PandaBot18.add_event_handler(
+                                ChumsBot18.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1133,7 +1133,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot18.add_event_handler(
+                            ChumsBot18.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1141,9 +1141,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot19:
+                        if ChumsBot19:
                             if edited:
-                                PandaBot19.add_event_handler(
+                                ChumsBot19.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1151,7 +1151,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot19.add_event_handler(
+                            ChumsBot19.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1159,9 +1159,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot20:
+                        if ChumsBot20:
                             if edited:
-                                PandaBot20.add_event_handler(
+                                ChumsBot20.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1169,7 +1169,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot20.add_event_handler(
+                            ChumsBot20.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1177,9 +1177,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot21:
+                        if ChumsBot21:
                             if edited:
-                                PandaBot21.add_event_handler(
+                                ChumsBot21.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1187,7 +1187,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot21.add_event_handler(
+                            ChumsBot21.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1195,9 +1195,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot22:
+                        if ChumsBot22:
                             if edited:
-                                PandaBot22.add_event_handler(
+                                ChumsBot22.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1205,7 +1205,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot22.add_event_handler(
+                            ChumsBot22.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1213,9 +1213,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot23:
+                        if ChumsBot23:
                             if edited:
-                                PandaBot23.add_event_handler(
+                                ChumsBot23.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1223,7 +1223,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot23.add_event_handler(
+                            ChumsBot23.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1231,9 +1231,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot24:
+                        if ChumsBot24:
                             if edited:
-                                PandaBot24.add_event_handler(
+                                ChumsBot24.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1241,7 +1241,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot24.add_event_handler(
+                            ChumsBot24.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1249,9 +1249,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot25:
+                        if ChumsBot25:
                             if edited:
-                                PandaBot25.add_event_handler(
+                                ChumsBot25.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1259,7 +1259,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot25.add_event_handler(
+                            ChumsBot25.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1267,9 +1267,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot26:
+                        if ChumsBot26:
                             if edited:
-                                PandaBot26.add_event_handler(
+                                ChumsBot26.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1277,7 +1277,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot26.add_event_handler(
+                            ChumsBot26.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1285,9 +1285,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot27:
+                        if ChumsBot27:
                             if edited:
-                                PandaBot27.add_event_handler(
+                                ChumsBot27.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1295,7 +1295,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot27.add_event_handler(
+                            ChumsBot27.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1303,9 +1303,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot28:
+                        if ChumsBot28:
                             if edited:
-                                PandaBot28.add_event_handler(
+                                ChumsBot28.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1313,7 +1313,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot28.add_event_handler(
+                            ChumsBot28.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1321,9 +1321,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot29:
+                        if ChumsBot29:
                             if edited:
-                                PandaBot29.add_event_handler(
+                                ChumsBot29.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1331,7 +1331,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot29.add_event_handler(
+                            ChumsBot29.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1339,9 +1339,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot30:
+                        if ChumsBot30:
                             if edited:
-                                PandaBot30.add_event_handler(
+                                ChumsBot30.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1349,7 +1349,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot30.add_event_handler(
+                            ChumsBot30.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1357,9 +1357,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot31:
+                        if ChumsBot31:
                             if edited:
-                                PandaBot31.add_event_handler(
+                                ChumsBot31.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1367,7 +1367,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot31.add_event_handler(
+                            ChumsBot31.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1375,9 +1375,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot32:
+                        if ChumsBot32:
                             if edited:
-                                PandaBot32.add_event_handler(
+                                ChumsBot32.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1385,7 +1385,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot32.add_event_handler(
+                            ChumsBot32.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1393,9 +1393,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot33:
+                        if ChumsBot33:
                             if edited:
-                                PandaBot33.add_event_handler(
+                                ChumsBot33.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1403,7 +1403,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot33.add_event_handler(
+                            ChumsBot33.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1411,9 +1411,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot34:
+                        if ChumsBot34:
                             if edited:
-                                PandaBot34.add_event_handler(
+                                ChumsBot34.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1421,7 +1421,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot34.add_event_handler(
+                            ChumsBot34.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1429,9 +1429,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot35:
+                        if ChumsBot35:
                             if edited:
-                                PandaBot35.add_event_handler(
+                                ChumsBot35.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1439,7 +1439,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot35.add_event_handler(
+                            ChumsBot35.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1447,9 +1447,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot36:
+                        if ChumsBot36:
                             if edited:
-                                PandaBot36.add_event_handler(
+                                ChumsBot36.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1457,7 +1457,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot36.add_event_handler(
+                            ChumsBot36.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1465,9 +1465,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot37:
+                        if ChumsBot37:
                             if edited:
-                                PandaBot37.add_event_handler(
+                                ChumsBot37.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1475,7 +1475,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot37.add_event_handler(
+                            ChumsBot37.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1483,9 +1483,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot38:
+                        if ChumsBot38:
                             if edited:
-                                PandaBot38.add_event_handler(
+                                ChumsBot38.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1493,7 +1493,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot38.add_event_handler(
+                            ChumsBot38.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1501,9 +1501,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot39:
+                        if ChumsBot39:
                             if edited:
-                                PandaBot39.add_event_handler(
+                                ChumsBot39.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1511,7 +1511,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot39.add_event_handler(
+                            ChumsBot39.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1519,9 +1519,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot40:
+                        if ChumsBot40:
                             if edited:
-                                PandaBot40.add_event_handler(
+                                ChumsBot40.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1529,7 +1529,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot40.add_event_handler(
+                            ChumsBot40.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1537,9 +1537,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot41:
+                        if ChumsBot41:
                             if edited:
-                                PandaBot41.add_event_handler(
+                                ChumsBot41.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1547,7 +1547,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot41.add_event_handler(
+                            ChumsBot41.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1555,9 +1555,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot42:
+                        if ChumsBot42:
                             if edited:
-                                PandaBot42.add_event_handler(
+                                ChumsBot42.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1565,7 +1565,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot42.add_event_handler(
+                            ChumsBot42.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1573,9 +1573,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot43:
+                        if ChumsBot43:
                             if edited:
-                                PandaBot43.add_event_handler(
+                                ChumsBot43.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1583,7 +1583,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot43.add_event_handler(
+                            ChumsBot43.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1591,9 +1591,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot44:
+                        if ChumsBot44:
                             if edited:
-                                PandaBot44.add_event_handler(
+                                ChumsBot44.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1601,7 +1601,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot44.add_event_handler(
+                            ChumsBot44.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1609,9 +1609,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot45:
+                        if ChumsBot45:
                             if edited:
-                                PandaBot45.add_event_handler(
+                                ChumsBot45.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1619,7 +1619,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot45.add_event_handler(
+                            ChumsBot45.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1627,9 +1627,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot46:
+                        if ChumsBot46:
                             if edited:
-                                PandaBot46.add_event_handler(
+                                ChumsBot46.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1637,7 +1637,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot46.add_event_handler(
+                            ChumsBot46.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1645,9 +1645,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot47:
+                        if ChumsBot47:
                             if edited:
-                                PandaBot47.add_event_handler(
+                                ChumsBot47.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1655,7 +1655,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot47.add_event_handler(
+                            ChumsBot47.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1663,9 +1663,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot48:
+                        if ChumsBot48:
                             if edited:
-                                PandaBot48.add_event_handler(
+                                ChumsBot48.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1673,7 +1673,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot48.add_event_handler(
+                            ChumsBot48.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1681,9 +1681,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot49:
+                        if ChumsBot49:
                             if edited:
-                                PandaBot49.add_event_handler(
+                                ChumsBot49.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1691,7 +1691,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot49.add_event_handler(
+                            ChumsBot49.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1699,9 +1699,9 @@ class ChumsUserbotSession(TelegramClient):
                                     **kwargs,
                                 ),
                             )
-                        if PandaBot50:
+                        if ChumsBot50:
                             if edited:
-                                PandaBot50.add_event_handler(
+                                ChumsBot50.add_event_handler(
                                     wrapper,
                                     MessageEdited(
                                         pattern=REGEX_.regex2,
@@ -1709,7 +1709,7 @@ class ChumsUserbotSession(TelegramClient):
                                         **kwargs,
                                     ),
                                 )
-                            PandaBot50.add_event_handler(
+                            ChumsBot50.add_event_handler(
                                 wrapper,
                                 NewMessage(
                                     pattern=REGEX_.regex2,
@@ -1724,206 +1724,206 @@ class ChumsUserbotSession(TelegramClient):
                     LOADED_CMDS[file_test].append(func)
                 except BaseException:
                     LOADED_CMDS.update({file_test: [func]})
-                if PandaBot:
+                if ChumsBot:
                     if edited:
-                        PandaBot.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot2:
+                        ChumsBot.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot2:
                     if edited:
-                        PandaBot2.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot2.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot3:
+                        ChumsBot2.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot2.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot3:
                     if edited:
-                        PandaBot3.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot3.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot4:
+                        ChumsBot3.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot3.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot4:
                     if edited:
-                        PandaBot4.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot4.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot5:
+                        ChumsBot4.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot4.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot5:
                     if edited:
-                        PandaBot5.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot5.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot6:
+                        ChumsBot5.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot5.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot6:
                     if edited:
-                        PandaBot6.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot6.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot7:
+                        ChumsBot6.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot6.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot7:
                     if edited:
-                        PandaBot7.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot7.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot8:
+                        ChumsBot7.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot7.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot8:
                     if edited:
-                        PandaBot8.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot8.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot9:
+                        ChumsBot8.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot8.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot9:
                     if edited:
-                        PandaBot9.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot9.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot10:
+                        ChumsBot9.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot9.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot10:
                     if edited:
-                        PandaBot10.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot10.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot11:
+                        ChumsBot10.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot10.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot11:
                     if edited:
-                        PandaBot11.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot11.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot12:
+                        ChumsBot11.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot11.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot12:
                     if edited:
-                        PandaBot12.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot12.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot13:
+                        ChumsBot12.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot12.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot13:
                     if edited:
-                        PandaBot13.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot13.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot14:
+                        ChumsBot13.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot13.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot14:
                     if edited:
-                        PandaBot14.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot14.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot15:
+                        ChumsBot14.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot14.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot15:
                     if edited:
-                        PandaBot15.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot15.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot16:
+                        ChumsBot15.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot15.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot16:
                     if edited:
-                        PandaBot16.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot16.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot17:
+                        ChumsBot16.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot16.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot17:
                     if edited:
-                        PandaBot17.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot17.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot18:
+                        ChumsBot17.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot17.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot18:
                     if edited:
-                        PandaBot18.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot18.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot19:
+                        ChumsBot18.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot18.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot19:
                     if edited:
-                        PandaBot19.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot19.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot20:
+                        ChumsBot19.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot19.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot20:
                     if edited:
-                        PandaBot20.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot20.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot21:
+                        ChumsBot20.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot20.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot21:
                     if edited:
-                        PandaBot21.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot21.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot22:
+                        ChumsBot21.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot21.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot22:
                     if edited:
-                        PandaBot22.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot22.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot23:
+                        ChumsBot22.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot22.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot23:
                     if edited:
-                        PandaBot23.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot23.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot24:
+                        ChumsBot23.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot23.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot24:
                     if edited:
-                        PandaBot24.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot24.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot25:
+                        ChumsBot24.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot24.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot25:
                     if edited:
-                        PandaBot25.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot25.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot26:
+                        ChumsBot25.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot25.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot26:
                     if edited:
-                        PandaBot26.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot26.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot27:
+                        ChumsBot26.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot26.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot27:
                     if edited:
-                        PandaBot27.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot27.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot28:
+                        ChumsBot27.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot27.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot28:
                     if edited:
-                        PandaBot28.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot28.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot29:
+                        ChumsBot28.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot28.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot29:
                     if edited:
-                        PandaBot29.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot29.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot30:
+                        ChumsBot29.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot29.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot30:
                     if edited:
-                        PandaBot30.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot30.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot31:
+                        ChumsBot30.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot30.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot31:
                     if edited:
-                        PandaBot31.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot31.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot32:
+                        ChumsBot31.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot31.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot32:
                     if edited:
-                        PandaBot32.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot32.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot33:
+                        ChumsBot32.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot32.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot33:
                     if edited:
-                        PandaBot33.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot33.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot34:
+                        ChumsBot33.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot33.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot34:
                     if edited:
-                        PandaBot34.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot34.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot35:
+                        ChumsBot34.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot34.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot35:
                     if edited:
-                        PandaBot35.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot35.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot36:
+                        ChumsBot35.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot35.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot36:
                     if edited:
-                        PandaBot36.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot36.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot37:
+                        ChumsBot36.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot36.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot37:
                     if edited:
-                        PandaBot37.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot37.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot38:
+                        ChumsBot37.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot37.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot38:
                     if edited:
-                        PandaBot38.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot38.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot39:
+                        ChumsBot38.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot38.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot39:
                     if edited:
-                        PandaBot39.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot39.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot40:
+                        ChumsBot39.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot39.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot40:
                     if edited:
-                        PandaBot40.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot40.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot41:
+                        ChumsBot40.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot40.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot41:
                     if edited:
-                        PandaBot41.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot41.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot42:
+                        ChumsBot41.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot41.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot42:
                     if edited:
-                        PandaBot42.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot42.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot43:
+                        ChumsBot42.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot42.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot43:
                     if edited:
-                        PandaBot43.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot43.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot44:
+                        ChumsBot43.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot43.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot44:
                     if edited:
-                        PandaBot44.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot44.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot45:
+                        ChumsBot44.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot44.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot45:
                     if edited:
-                        PandaBot45.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot45.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot46:
+                        ChumsBot45.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot45.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot46:
                     if edited:
-                        PandaBot46.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot46.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot47:
+                        ChumsBot46.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot46.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot47:
                     if edited:
-                        PandaBot47.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot47.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot48:
+                        ChumsBot47.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot47.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot48:
                     if edited:
-                        PandaBot48.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot48.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot49:
+                        ChumsBot48.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot48.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot49:
                     if edited:
-                        PandaBot49.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot49.add_event_handler(func, events.NewMessage(**kwargs))
-                if PandaBot50:
+                        ChumsBot49.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot49.add_event_handler(func, events.NewMessage(**kwargs))
+                if ChumsBot50:
                     if edited:
-                        PandaBot50.add_event_handler(func, events.MessageEdited(**kwargs))
-                    PandaBot50.add_event_handler(func, events.NewMessage(**kwargs))
+                        ChumsBot50.add_event_handler(func, events.MessageEdited(**kwargs))
+                    ChumsBot50.add_event_handler(func, events.NewMessage(**kwargs))
             return wrapper
 
         return decorator
