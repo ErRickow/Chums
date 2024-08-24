@@ -1,8 +1,8 @@
 from telethon import functions
 
 
-from . import pandaub, tgbot
-Bot = pandaub
+from . import eruserbot, tgbot
+Bot = eruserbot
 from ...config import Config
 from ..._misc import CMD_INFO, GRP_INFO, PLG_INFO
 from ..._misc.managers import edit_delete, edit_or_reply
@@ -125,7 +125,7 @@ async def cmdlist():
     return outstr
 
 
-@pandaub.ilhammansiz_cmd(
+@eruserbot.ilhammansiz_cmd(
     pattern="help ?(-c|-p|-t)? ?(.*)?",
     command=("help", plugin_category),
     info={
@@ -161,7 +161,7 @@ async def _(event):
     await edit_or_reply(event, outstr)
     
 
-@pandaub.ilhammansiz_cmd(
+@eruserbot.ilhammansiz_cmd(
     pattern="inline(?: |$)(.*)",
     command=("inline", plugin_category),
     info={
@@ -179,7 +179,7 @@ async def _(event):
     await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)
     await event.delete()
 
-@pandaub.ilhammansiz_cmd(
+@eruserbot.ilhammansiz_cmd(
     pattern="cmds(?: |$)(.*)",
     command=("cmds", plugin_category),
     info={
@@ -212,7 +212,7 @@ async def _(event):
     )
 
 
-@pandaub.ilhammansiz_cmd(
+@eruserbot.ilhammansiz_cmd(
     pattern="s (.*)",
     command=("s", plugin_category),
     info={
@@ -233,7 +233,7 @@ async def _(event):
     await edit_or_reply(event, out)
 
 
-@pandaub.ilhammansiz_cmd(
+@eruserbot.ilhammansiz_cmd(
     pattern="dc$",
     command=("dc", plugin_category),
     info={
@@ -256,7 +256,7 @@ async def _(event):
               \n**DC4 :** Amsterdam, NL\
               \n**DC5 : **Singapore, SG\
                 "
-    await edit_or_reply(event, result)
+    await event.reply(event, result)
 
 
 
