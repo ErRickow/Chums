@@ -189,7 +189,7 @@ async def autobot():
     await mansizbot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "PandaX_Userbot" + (str(who.id))[6:] + str(ran) + "_bot"
+        username = "ErC_User" + (str(who.id))[6:] + str(ran) + "_bot"
         await mansizbot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await mansizbot.get_messages(bf, limit=1))[0].text
