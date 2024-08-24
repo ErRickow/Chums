@@ -16,7 +16,7 @@ plugin_category = "plugins"
     info={
         "header": "To Execute terminal commands in a subprocess.",
         "usage": "{tr}exec <command>",
-        "examples": "{tr}exec panda stringsetup.py",
+        "examples": "{tr}exec chums stringsetup.py",
     },
 )
 async def _(event):
