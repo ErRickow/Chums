@@ -120,7 +120,7 @@ async def update(xx, repo, ups_rem, ac_br):
     execle(sys.executable, *args, environ)
 
 
-@ChumsBot.ilhammansiz_cmd(
+@ChumsBot.eruserbot_cmd(
     pattern="update(| now)?$",
     command=("update", plugin_category),
     info={
