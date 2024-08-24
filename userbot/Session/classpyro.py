@@ -18,7 +18,7 @@ from .._database import pdB
 
 
 class PyroClient(Utils, Client):
-    """Userbot (panda)"""
+    """Userbot (chumw)"""
 
     def __init__(self):
         super().__init__(
@@ -43,7 +43,7 @@ class PyroClient(Utils, Client):
 
 
     class Bot(Client, Utils):
-        """Assistant (Panda)"""
+        """Assistant (Chums)"""
 
         def __init__(self):
             super().__init__(
