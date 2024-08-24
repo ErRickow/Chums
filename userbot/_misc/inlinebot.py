@@ -531,8 +531,8 @@ async def inline_handler(event):  # sourcery no-metrics
             id=str(uuid4()),
             type="photo",
             title="𝗕𝗼𝘁",
-            description="Deploy yourself",
-            url="https://github.com/AllTeamPanda/PandaX_Userbot",
+            description="Bokep?",
+            url="https://porn.hub",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
