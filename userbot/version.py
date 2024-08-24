@@ -12,7 +12,7 @@ __version_code__ = (
 
 __version__ = __pversion__ + __version_code__
 
-panda_version = __version__
+chums_version = __version__
 
 
 
@@ -23,15 +23,15 @@ from sys import version_info
 branch = f"@main"
 
 
-__Tgl__ = "26"
-__Bln__ = "02"
-__Thn__ = "2023"
+__Tgl__ = "24"
+__Bln__ = "08"
+__Thn__ = "2024"
 
 
 __python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "PandaX_UserBot <https://github.com/ilhammansiz/PandaX_Userbot>"
-__copyright__ = "PandaX_UserBot Copyright (©) 2020 - 2021  " + __author__
+__author__ = "Chums_Userbot <https://github.com/ErRickow/Chums>"
+__copyright__ = "Chums Userbot [©] 2 0 2 4 [3R]  " + __author__
 
 
 versi = f"{__Tgl__}.{__Bln__}.{__Thn__}"
