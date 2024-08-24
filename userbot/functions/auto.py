@@ -49,7 +49,7 @@ LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL") or 0)
 
 from logging import getLogger
 
-LOGS = getLogger("PandaUserbot")
+LOGS = getLogger("ErUbot")
 
 
 class Config(object):
@@ -85,7 +85,7 @@ ilhammansiezzzzzz = "PRIVATE_GROUP_BOT_API_ID"
 
 
 async def autogrup():
-    from userbot import PandaBot as mansizbot
+    from userbot import ChumsBot as mansizbot
 
     await mansizbot.start()
     if LOG_CHANNEL:
@@ -142,7 +142,7 @@ async def autogrup():
 
 
 async def autobot():
-    from userbot import PandaBot as mansizbot
+    from userbot import ChumsBot as mansizbot
 
     await mansizbot.start()
     if BOT_TOKEN:
@@ -154,9 +154,9 @@ async def autobot():
     who = await mansizbot.get_me()
     name = "Assistant " + who.first_name
     if who.username:
-        username = who.username + "_Pandabot"
+        username = who.username + "_ChumsBot"
     else:
-        username = "PandaX_Userbot_" + (str(who.id))[5:] + "_bot"
+        username = "ErC_Userbot_" + (str(who.id))[5:] + "_bot"
     bf = "Botfather"
     await mansizbot(UnblockRequest(bf))
     await mansizbot.send_message(bf, "/cancel")
