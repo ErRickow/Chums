@@ -63,7 +63,7 @@ bot = ErBot
 eruserbot = ErBot
 botvc = ErBot
 Stark = ErBot
-petercordpanda_bot = eruserbot
+petercordchums_bot = eruserbot
 
 def dual_mode():
     try:
