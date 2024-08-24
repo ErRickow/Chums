@@ -152,8 +152,8 @@ async def terminal_handler(_, m: Message):
                 caption=f"`{m.text}`",
             )
         else:
-            await app.send_edit(
+            await m.reply(
                 msg, f"**COMMAND:**\n\n{m.text}\n\n\n**OUTPUT:**\n\n`{output}`"
             )
     else:
-        await app.send_edit(msg, "**OUTPUT:**\n\n`No Output`")
+        await m.reply(msg, "**OUTPUT:**\n\n`No Output`")
