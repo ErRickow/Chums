@@ -1,9 +1,9 @@
-# Copyright (C) 2021 PandaUserbot <https://github.com/ilhammansiz/PandaX_Userbot>
+# Copyright (C) 2021 ErUbot <https://github.com/ilhammansiz/PandaX_Userbot>
 # maintaince 2023 pyrogram & telethon
 # jangan di hapus ga semuanya dihapus lu paham 😏
 # Pembaruan 2023 skala besar dengan menggabungkan 2 basis telethon and pyrogram.
 # Dibuat dari berbagai userbot yang pernah ada.
-# t.me/pandac0de t.me/pandauserbot
+# t.me/pandac0de t.me/ErUbot
 
 import glob
 import os
@@ -20,7 +20,7 @@ from userbot import *
 from userbot.config import Config, Var, Database
 from userbot._misc.logger import logging
 
-from userbot._misc.session import PandaBot, PandaBot2, PandaBot3, PandaBot4, PandaBot5, PandaBot6, PandaBot7, PandaBot8, PandaBot9, PandaBot10, PandaBot11, PandaBot12, PandaBot13, PandaBot14, PandaBot15, PandaBot16, PandaBot17, PandaBot18, PandaBot19, PandaBot10, PandaBot20, PandaBot21, PandaBot22, PandaBot23, PandaBot24, PandaBot25, PandaBot26, PandaBot27, PandaBot28, PandaBot29, PandaBot30, PandaBot31, PandaBot32, PandaBot33, PandaBot34, PandaBot35, PandaBot36, PandaBot37, PandaBot38, PandaBot39, PandaBot40, PandaBot41, PandaBot42, PandaBot43, PandaBot44, PandaBot45, PandaBot46, PandaBot47, PandaBot48, PandaBot49, PandaBot50, tgbot
+from userbot._misc.session import ChumsBot, ChumsBot2, ChumsBot3, ChumsBot4, ChumsBot5, ChumsBot6, ChumsBot7, ChumsBot8, ChumsBot9, ChumsBot10, ChumsBot11, ChumsBot12, ChumsBot13, ChumsBot14, ChumsBot15, ChumsBot16, ChumsBot17, ChumsBot18, ChumsBot19, ChumsBot10, ChumsBot20, ChumsBot21, ChumsBot22, ChumsBot23, ChumsBot24, ChumsBot25, ChumsBot26, ChumsBot27, ChumsBot28, ChumsBot29, ChumsBot30, ChumsBot31, ChumsBot32, ChumsBot33, ChumsBot34, ChumsBot35, ChumsBot36, ChumsBot37, ChumsBot38, ChumsBot39, ChumsBot40, ChumsBot41, ChumsBot42, ChumsBot43, ChumsBot44, ChumsBot45, ChumsBot46, ChumsBot47, ChumsBot48, ChumsBot49, ChumsBot50, tgbot
 from userbot.helpers.utils import install_pip
 from userbot._database import addgvar, delgvar, gvarstatus
 from .pluginmanager import load_module
@@ -28,34 +28,34 @@ from .tools import create_supergroup
 import base64
 from userbot.version import __version__ as botvers
 
-LOGS = logging.getLogger("PandaUserbot")
+LOGS = logging.getLogger("ErUbot")
 cmdhr = Config.COMMAND_HAND_LER
-pandaub = PandaBot
+pandaub = ChumsBot
 
 async def setup_bot():
     try:
-        await PandaBot.start()
-        delta = await PandaBot(functions.help.GetConfigRequest())
+        await ChumsBot.start()
+        delta = await ChumsBot(functions.help.GetConfigRequest())
         for option in delta.dc_options:
-            if option.ip_address == PandaBot.session.server_address:
-                if PandaBot.session.dc_id != option.id:
+            if option.ip_address == ChumsBot.session.server_address:
+                if ChumsBot.session.dc_id != option.id:
                     LOGS.warning(
-                        f"Fixed DC ID in session from {PandaBot.session.dc_id}"
+                        f"Fixed DC ID in session from {ChumsBot.session.dc_id}"
                         f" to {option.id}"
                     )
-                PandaBot.session.set_dc(option.id, option.ip_address, option.port)
-                PandaBot.session.save()
+                ChumsBot.session.set_dc(option.id, option.ip_address, option.port)
+                ChumsBot.session.save()
                 break
-        PandaBot.me = await PandaBot.get_me()
+        ChumsBot.me = await ChumsBot.get_me()
         bot_details = await tgbot.get_me()
         Config.TG_BOT_USERNAME = f"@{bot_details.username}"
-        PandaBot.uid = tgbot.uid = utils.get_peer_id(PandaBot.me)
+        ChumsBot.uid = tgbot.uid = utils.get_peer_id(ChumsBot.me)
         if Config.OWNER_ID == 0:
-            Config.OWNER_ID = utils.get_peer_id(PandaBot.me)
+            Config.OWNER_ID = utils.get_peer_id(ChumsBot.me)
         if Config.STRING_SESSION2:
-            await PandaBot2.start()
+            await ChumsBot2.start()
         if Config.STRING_SESSION3:
-            await PandaBot3.start()
+            await ChumsBot3.start()
     except Exception as e:
         LOGS.error(f"STRING_SESSION - {str(e)}")
         sys.exit()
@@ -301,7 +301,7 @@ async def verifyLoggerGroup():
     else:
         descript = "Don't delete this group or change to group(If you change group all your previous snips, welcome will be lost.)"
         _, groupid = await create_supergroup(
-            "PandaUserbot BotLog Group", pandaub, Config.TG_BOT_USERNAME, descript
+            "ErUbot BotLog Group", pandaub, Config.TG_BOT_USERNAME, descript
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
@@ -358,15 +358,15 @@ async def ongrup():
     try:
         if cekbot:
             if CHATID != 0:
-                await PandaBot.send_message(
+                await ChumsBot.send_message(
                     CHATID,
                     ON,
                 )
-                await PandaBot.send_message(
+                await ChumsBot.send_message(
                     CHATID,
                     ON,
                 )
-                await PandaBot.send_message(
+                await ChumsBot.send_message(
                     CHATID,
                     ON,
                 )
@@ -378,11 +378,11 @@ async def join():
     X = base64.b64decode("QFBhbmRhVXNlcmJvdA==")
     L = base64.b64decode("QFRlYW1TcXVhZFVzZXJib3RTdXBwb3J0")
     try:
-        await PandaBot(JoinChannelRequest(X))
+        await ChumsBot(JoinChannelRequest(X))
     except BaseException:
         pass
     try:
-        await PandaBot(JoinChannelRequest(L))
+        await ChumsBot(JoinChannelRequest(L))
     except BaseException:
         pass
 
@@ -439,10 +439,10 @@ async def memulai():
 async def ClientMultiTelethon():
     if Var.STRING_SESSION and Database.BOT_TOKEN:
         
-        if PandaBot:
+        if ChumsBot:
             try:
                 tgbot.me = await tgbot.get_me()
-                await PandaBot(InviteToChannelRequest(Config.PRIVATE_GROUP_BOT_API_ID, [tgbot.me.username]))
+                await ChumsBot(InviteToChannelRequest(Config.PRIVATE_GROUP_BOT_API_ID, [tgbot.me.username]))
             except BaseException as er:
                 LOGS.info("Error while Adding Assistant to Log Channel")
                 LOGS.exception(er)
@@ -465,7 +465,7 @@ async def ClientMultiTelethon():
                         manage_call=True,
                     )
                     try:
-                        await PandaBot(
+                        await ChumsBot(
                             EditAdminRequest(
                                 Config.PRIVATE_GROUP_BOT_API_ID, tgbot.me.username, rights, "Assistant"
                             )
