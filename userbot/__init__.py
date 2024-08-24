@@ -82,8 +82,8 @@ def dual_mode():
 from .config import *
 
 
-if Config.UPSTREAM_REPO == "PANDA_USERBOT":
-    UPSTREAM_REPO_URL = "https://github.com/AllTeamXPanda/PandaX_Userbot"
+if Config.UPSTREAM_REPO == "Chums":
+    UPSTREAM_REPO_URL = "https://github.com/ErRickow/Chums"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
