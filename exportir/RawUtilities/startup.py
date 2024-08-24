@@ -337,14 +337,14 @@ async def verifyLoggerGroup():
 
 
 ON = f"""
-Panda-Userbot
+Chums-Userbot
 Owner {Config.ALIVE_NAME}
 Version - `{botvers}`
 Ketik `{cmdhr}alive` untuk Mengecheck Bot apakah sudah aktif
 """
 
 MSG_ON = """
-Panda-Userbot
+Chums-Userbot
 ━━
 Version - `{}'
 Ketik `{}alive` untuk Mengecheck Bot
