@@ -38,7 +38,7 @@ BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>
 tr = Config.COMMAND_HAND_LER
 pandaub = PandaBot
 
-ilhammansiez = Config.PANDA_HELP_LOGO = SqL.get_key("PANDA_HELP_LOGO") or "https://telegra.ph/file/ccbc25f1c295310902070.jpg"
+ilhammansiez = Config.CHUMS_LOGO_HELP = SqL.get_key("CHUMS_LOGO_HELP") or "https://telegra.ph/file/ccbc25f1c295310902070.jpg"
 
 from ..modules.telethon import mention
 PANDALOGO = ilhammansiez
@@ -921,7 +921,7 @@ async def on_plugin_callback_query_handler(event):
 @check_owner
 async def on_plugin_callback_query_handler(event):
     pru = event.sender_id
-    var = "PANDA_HELP_LOGO"
+    var = "CHUMS_LOGO_HELP"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
             "**Silahkan Kirimkan tanda perintah bot Untuk var LOGO HELP anda\nContoh link gambar telegraph**\n\nGunakan /cancel untuk membatalkan."
@@ -996,7 +996,7 @@ async def on_plugin_callback_query_handler(event):
     var = "UPSTREAM_REPO_URL"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**Silahkan Kirimkan repo PandaUserbot \nContoh link https://github.com/ilhammansiz/PandaX_Userbot**\n\nGunakan /cancel untuk membatalkan."
+            "**Silahkan Kirimkan repo Chums Userbot\nContoh link https://porn.hub**\n\nGunakan /cancel untuk membatalkan."
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
