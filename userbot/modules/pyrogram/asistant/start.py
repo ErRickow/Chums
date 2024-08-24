@@ -6,7 +6,7 @@ from .... import app
 
 @app.bot.on_message(filters.command("start"))
 async def send_response(_, m: Message):
-    await m.reply("How can i help You ?")
+    await m.reply("Apa Sayang ?")
 
 
 @app.bot.on_message(filters.new_chat_members & filters.group)
@@ -15,7 +15,7 @@ async def added_to_group_msg(_, m: Message):
         try:
             await app.bot.send_message(
                 m.chat.id,
-                "Thank You for adding me in this group !\nUse /help to know my features.",
+                "Terimakasih Telah Menambahkan Gw Di Group Ini !\nGunakan /help Untuk tau tentang fitur nya.",
             )
         except Exception as e:
             await app.error(m, e)
