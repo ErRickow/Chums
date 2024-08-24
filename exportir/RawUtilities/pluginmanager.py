@@ -65,7 +65,7 @@ def load_module(shortname, plugin_path=None):
         mod.edit_or_reply = edit_or_reply
         mod.logger = logging.getLogger(shortname)
         mod.borg = ChumsBot
-        mod.petercordpanda_bot = ChumsBot
+        mod.petercordchums_bot = ChumsBot
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.modules." + shortname] = mod
