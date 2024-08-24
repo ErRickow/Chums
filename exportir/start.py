@@ -9,7 +9,7 @@ from os import system, path
 UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO") or None
 U_BRANCH = os.environ.get("U_BRANCH") or None
 
-PANDA = "★ PANDA USERBOT DEPLOY★"
+PANDA = "★ CHUMS USERBOT DEPLOY★"
 
 
 def clear():
