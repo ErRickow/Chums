@@ -1,5 +1,6 @@
 aiofiles
 aiohttp
+tgCrypto
 bs4
 cloudscraper
 colour
