@@ -156,7 +156,7 @@ async def autobot():
     if who.username:
         username = who.username + "_ChumsBot"
     else:
-        username = "ErC_Userbot_" + (str(who.id))[5:] + "_bot"
+        username = "ErC_User_" + (str(who.id))[5:] + "_bot"
     bf = "Botfather"
     await mansizbot(UnblockRequest(bf))
     await mansizbot.send_message(bf, "/cancel")
