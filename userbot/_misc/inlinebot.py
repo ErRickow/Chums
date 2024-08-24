@@ -284,31 +284,31 @@ async def inline_handler(event):  # sourcery no-metrics
     if query_user_id == Config.OWNER_ID or query_user_id in Config.SUDO_USERS:
         hmm = re.compile("secret (.*) (.*)")
         match = re.findall(hmm, query)
-        if query.startswith("**PandaUserbot"):
+        if query.startswith("**Chums Userbot"):
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("Repo", "https://github.com/AllTeamPanda/PandaX_Userbot"),
+                    Button.url("Repo", "https;//porn.hub"),
                 )
             ]
             PANDA_IMG = Config.ALIVE_PIC or None
             if PANDA_IMG and PANDA_IMG.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PANDA_IMG,
-                    # title="Alive panda",
+                    # title="Chums Alive",
                     text=query,
                     buttons=buttons,
                 )
             elif PANDA_IMG:
                 result = builder.document(
                     PANDA_IMG,
-                    title="Alive panda",
+                    title="Chums Alive",
                     text=query,
                     buttons=buttons,
                 )
             else:
                 result = builder.article(
-                    title="Alive panda",
+                    title="Chums Alive",
                     text=query,
                     buttons=buttons,
                 )
@@ -507,13 +507,13 @@ async def inline_handler(event):  # sourcery no-metrics
             elif PANDA_IMG:
                 result = builder.document(
                     PANDA_IMG,
-                    title="Alive panda",
+                    title="Chums Alive",
                     text=query,
                     buttons=buttons,
                 )
             else:
                 result = builder.article(
-                    title="Alive panda",
+                    title="Chums Alive",
                     text=query,
                     buttons=buttons,
                 )
