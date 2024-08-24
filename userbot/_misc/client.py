@@ -75,8 +75,8 @@ class REGEX:
 REGEX_ = REGEX()
 sudo_enabledcmds = sudo_enabled_cmds()
 
-class PandaUserbotSession(TelegramClient):
-    def ilhammansiz_cmd(
+class ChumsUserbotSession(TelegramClient):
+    def erchums_cmd(
         self: TelegramClient,
         pattern: str or tuple = None,
         info: str or tuple = None,
@@ -1943,7 +1943,7 @@ class PandaUserbotSession(TelegramClient):
                 LOGS.debug(e)
         self.running_processes.clear()
 
-PandaUserbotSession.fast_download_file = download_file
-PandaUserbotSession.fast_upload_file = upload_file
-PandaUserbotSession.reload = restart_script
-PandaUserbotSession.check_testcases = checking
+ChumsUserbotSession.fast_download_file = download_file
+ChumsUserbotSession.fast_upload_file = upload_file
+ChumsUserbotSession.reload = restart_script
+ChumsUserbotSession.check_testcases = checking
