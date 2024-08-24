@@ -3,7 +3,9 @@
 # PLease read the GNU Affero General Public License in
 # <https://github.com/TeamUltroid/pyUltroid/blob/main/LICENSE>.
 
-# Er Rewrite 2024
+# Recode by @robotrakitangakbagus, @diemmmmmmmmmm
+# Import PandaX_Userbot <https://github.com/ilhammansiz/PandaX_Userbot>
+# t.me/PandaUserbot & t.me/pandac0de
 
 import logging
 import ast
@@ -51,13 +53,13 @@ elif Var.MONGO_URI:
         LOGS.info("Installing 'pymongo' for database.")
         os.system(f"{sys.executable} -m pip install -q pymongo[srv]")
         from pymongo import MongoClient
-#elif Var.DATABASE_URL:
-#    try:
-#        import psycopg2
-#    except ImportError:
-#        LOGS.info("Installing 'pyscopg2' for database.")
-#        os.system(f"{sys.executable} -m pip install -q psycopg2-binary")
-#        import psycopg2
+elif Var.DATABASE_URL:
+    try:
+        import psycopg2
+    except ImportError:
+        LOGS.info("Installing 'pyscopg2' for database.")
+        os.system(f"{sys.executable} -m pip install -q psycopg2-binary")
+        import psycopg2
 else:
     try:
         from .localdb import Database
@@ -132,7 +134,7 @@ class MongoDB(_BaseDatabase):
         super().__init__()
 
     def __repr__(self):
-        return f"<Er.MonGoDB\n -total_keys: {len(self.keys())}\n>"
+        return f"<Panda.MonGoDB\n -total_keys: {len(self.keys())}\n>"
 
     @property
     def name(self):
@@ -187,7 +189,7 @@ class SqlDB(_BaseDatabase):
             self._connection.autocommit = True
             self._cursor = self._connection.cursor()
             self._cursor.execute(
-                "CREATE TABLE IF NOT EXISTS Ubot (ubotCli varchar(70))"
+                "CREATE TABLE IF NOT EXISTS Panda (pandaCli varchar(70))"
             )
         except Exception as error:
             LOGS.exception(error)
@@ -204,21 +206,21 @@ class SqlDB(_BaseDatabase):
     @property
     def usage(self):
         self._cursor.execute(
-            "SELECT pg_size_pretty(pg_relation_size('Er')) AS size"
+            "SELECT pg_size_pretty(pg_relation_size('Panda')) AS size"
         )
         data = self._cursor.fetchall()
         return int(data[0][0].split()[0])
 
     def keys(self):
         self._cursor.execute(
-            "SELECT column_name FROM information_schema.columns WHERE table_schema = 'public' AND table_name  = 'Er'"
+            "SELECT column_name FROM information_schema.columns WHERE table_schema = 'public' AND table_name  = 'panda'"
         )  # case sensitive
         data = self._cursor.fetchall()
         return [_[0] for _ in data]
 
     def get(self, variable):
         try:
-            self._cursor.execute(f"SELECT {variable} FROM Er Ubot")
+            self._cursor.execute(f"SELECT {variable} FROM Panda")
         except psycopg2.errors.UndefinedColumn:
             return None
         data = self._cursor.fetchall()
@@ -231,28 +233,28 @@ class SqlDB(_BaseDatabase):
 
     def set(self, key, value):
         try:
-            self._cursor.execute(f"ALTER TABLE Er DROP COLUMN IF EXISTS {key}")
+            self._cursor.execute(f"ALTER TABLE Panda DROP COLUMN IF EXISTS {key}")
         except (psycopg2.errors.UndefinedColumn, psycopg2.errors.SyntaxError):
             pass
         except BaseException as er:
             LOGS.exception(er)
         self._cache.update({key: value})
-        self._cursor.execute(f"ALTER TABLE Er ADD {key} TEXT")
-        self._cursor.execute(f"INSERT INTO Er ({key}) values (%s)", (str(value),))
+        self._cursor.execute(f"ALTER TABLE Panda ADD {key} TEXT")
+        self._cursor.execute(f"INSERT INTO Panda ({key}) values (%s)", (str(value),))
         return True
 
     def delete(self, key):
         try:
-            self._cursor.execute(f"ALTER TABLE Er DROP COLUMN {key}")
+            self._cursor.execute(f"ALTER TABLE Panda DROP COLUMN {key}")
         except psycopg2.errors.UndefinedColumn:
             return False
         return True
 
     def flushall(self):
         self._cache.clear()
-        self._cursor.execute("DROP TABLE Er")
+        self._cursor.execute("DROP TABLE Panda")
         self._cursor.execute(
-            "CREATE TABLE IF NOT EXISTS Er (ErCli varchar(70))"
+            "CREATE TABLE IF NOT EXISTS Panda (pandaCli varchar(70))"
         )
         return True
 
@@ -315,7 +317,7 @@ class RedisDB(_BaseDatabase):
 
 class LocalDB(_BaseDatabase):
     def __init__(self):
-        self.db = Database("chums")
+        self.db = Database("panda")
         self.get = self.db.get
         self.set = self.db.set
         self.delete = self.db.delete
@@ -332,7 +334,7 @@ class LocalDB(_BaseDatabase):
         return self._cache.keys()
 
     def __repr__(self):
-        return f"<Chums.LocalDB\n -total_keys: {len(self.keys())}\n>"
+        return f"<Panda.LocalDB\n -total_keys: {len(self.keys())}\n>"
 
 def pyDatabase():
     _er = False
