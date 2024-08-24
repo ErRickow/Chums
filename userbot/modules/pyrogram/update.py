@@ -241,6 +241,7 @@ app.CMD_HELP.update(
             {
                 "update": "To check if new update is available or not.",
                 "update [ now ]": "To update userbot to latest version.",
+                "up": "Tampilan Baru",
             },
         )
     }
