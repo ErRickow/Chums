@@ -30,12 +30,12 @@ def start():
     #userbot.LOOP.run_until_complete(resources.clonevc())
     userbot.LOOP.run_until_complete(resources.join())
     LOGS.info(f"꧁༺ Panda Userbot ༻꧂\n⚙️ Version:{userbot.__version__} [TELAH DIAKTIFKAN]")
-    if PandaBot:
-        PandaBot.send_message(PRIVATE, THON_ON.format(PandaBot.me.username, userbot.__version__, cmdhr, total))
-    if PandaBot2:
-        PandaBot2.send_message(PRIVATE, THON_ON.format(PandaBot2.me.username, userbot.__version__, cmdhr, total))
-    if PandaBot3:
-        PandaBot3.send_message(PRIVATE, THON_ON.format(PandaBot3.me.username, userbot.__version__, cmdhr, total))
+    if ChumsBot:
+        ChumsBot.send_message(PRIVATE, THON_ON.format(ChumsBot.me.username, userbot.__version__, cmdhr, total))
+    if ChumsBot2:
+        ChumsBot2.send_message(PRIVATE, THON_ON.format(ChumsBot2.me.username, userbot.__version__, cmdhr, total))
+    if ChumsBot3:
+        ChumsBot3.send_message(PRIVATE, THON_ON.format(ChumsBot3.me.username, userbot.__version__, cmdhr, total))
              
 
 
@@ -49,537 +49,537 @@ if __name__ == "__main__":
         Pyrogram()
         
     
-if PandaBot:
+if ChumsBot:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot.run_until_disconnected()
+                ChumsBot.run_until_disconnected()
         else:
-            PandaBot.disconnect()    
+            ChumsBot.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot2:
+if ChumsBot2:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot2.run_until_disconnected()
+                ChumsBot2.run_until_disconnected()
         else:
-            PandaBot2.disconnect()    
+            ChumsBot2.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot3:
+if ChumsBot3:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot3.run_until_disconnected()
+                ChumsBot3.run_until_disconnected()
         else:
-            PandaBot3.disconnect()    
+            ChumsBot3.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
-if PandaBot4:
+if ChumsBot4:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot4.run_until_disconnected()
+                ChumsBot4.run_until_disconnected()
         else:
-            PandaBot4.disconnect()    
+            ChumsBot4.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
-if PandaBot5:
+if ChumsBot5:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot5.run_until_disconnected()
+                ChumsBot5.run_until_disconnected()
         else:
-            PandaBot5.disconnect()    
+            ChumsBot5.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
-if PandaBot6:
+if ChumsBot6:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot6.run_until_disconnected()
+                ChumsBot6.run_until_disconnected()
         else:
-            PandaBot6.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-
-
-
-if PandaBot7:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot7.run_until_disconnected()
-        else:
-            PandaBot7.disconnect()    
+            ChumsBot6.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
 
 
-if PandaBot8:
+if ChumsBot7:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot8.run_until_disconnected()
+                ChumsBot7.run_until_disconnected()
         else:
-            PandaBot8.disconnect()    
+            ChumsBot7.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot9:
+
+
+if ChumsBot8:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot9.run_until_disconnected()
+                ChumsBot8.run_until_disconnected()
         else:
-            PandaBot9.disconnect()    
+            ChumsBot8.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot10:
+if ChumsBot9:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot10.run_until_disconnected()
+                ChumsBot9.run_until_disconnected()
         else:
-            PandaBot10.disconnect()    
+            ChumsBot9.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot11:
+if ChumsBot10:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot11.run_until_disconnected()
+                ChumsBot10.run_until_disconnected()
         else:
-            PandaBot11.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot12:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot12.run_until_disconnected()
-        else:
-            PandaBot12.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot13:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot13.run_until_disconnected()
-        else:
-            PandaBot13.disconnect()    
+            ChumsBot10.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot14:
+if ChumsBot11:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot14.run_until_disconnected()
+                ChumsBot11.run_until_disconnected()
         else:
-            PandaBot14.disconnect()    
+            ChumsBot11.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot12:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot12.run_until_disconnected()
+        else:
+            ChumsBot12.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot13:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot13.run_until_disconnected()
+        else:
+            ChumsBot13.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot15:
+if ChumsBot14:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot15.run_until_disconnected()
+                ChumsBot14.run_until_disconnected()
         else:
-            PandaBot15.disconnect()    
+            ChumsBot14.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot16:
+if ChumsBot15:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot16.run_until_disconnected()
+                ChumsBot15.run_until_disconnected()
         else:
-            PandaBot16.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot17:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot17.run_until_disconnected()
-        else:
-            PandaBot17.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot18:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot18.run_until_disconnected()
-        else:
-            PandaBot18disconnect()    
+            ChumsBot15.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot19:
+if ChumsBot16:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot19.run_until_disconnected()
+                ChumsBot16.run_until_disconnected()
         else:
-            PandaBot19.disconnect()    
+            ChumsBot16.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot17:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot17.run_until_disconnected()
+        else:
+            ChumsBot17.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot18:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot18.run_until_disconnected()
+        else:
+            ChumsBot18disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot20:
+if ChumsBot19:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot21.run_until_disconnected()
+                ChumsBot19.run_until_disconnected()
         else:
-            PandaBot21.disconnect()    
+            ChumsBot19.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot21:
+if ChumsBot20:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot21.run_until_disconnected()
+                ChumsBot21.run_until_disconnected()
         else:
-            PandaBot21.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot22:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot22.run_until_disconnected()
-        else:
-            PandaBot22.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot23:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot23.run_until_disconnected()
-        else:
-            PandaBot23.disconnect()    
+            ChumsBot21.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot24:
+if ChumsBot21:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot24.run_until_disconnected()
+                ChumsBot21.run_until_disconnected()
         else:
-            PandaBot24.disconnect()    
+            ChumsBot21.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot22:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot22.run_until_disconnected()
+        else:
+            ChumsBot22.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot23:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot23.run_until_disconnected()
+        else:
+            ChumsBot23.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot25:
+if ChumsBot24:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot25.run_until_disconnected()
+                ChumsBot24.run_until_disconnected()
         else:
-            PandaBot25.disconnect()    
+            ChumsBot24.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot26:
+if ChumsBot25:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot26.run_until_disconnected()
+                ChumsBot25.run_until_disconnected()
         else:
-            PandaBot26.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot27:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot27.run_until_disconnected()
-        else:
-            PandaBot27.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot28:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot28.run_until_disconnected()
-        else:
-            PandaBot28.disconnect()    
+            ChumsBot25.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot29:
+if ChumsBot26:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot29.run_until_disconnected()
+                ChumsBot26.run_until_disconnected()
         else:
-            PandaBot29.disconnect()    
+            ChumsBot26.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot27:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot27.run_until_disconnected()
+        else:
+            ChumsBot27.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot28:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot28.run_until_disconnected()
+        else:
+            ChumsBot28.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot30:
+if ChumsBot29:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot30.run_until_disconnected()
+                ChumsBot29.run_until_disconnected()
         else:
-            PandaBot30.disconnect()    
+            ChumsBot29.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot31:
+if ChumsBot30:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot31.run_until_disconnected()
+                ChumsBot30.run_until_disconnected()
         else:
-            PandaBot31.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot32:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot32.run_until_disconnected()
-        else:
-            PandaBot32.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot33:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot33.run_until_disconnected()
-        else:
-            PandaBot33.disconnect()    
+            ChumsBot30.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot34:
+if ChumsBot31:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot34.run_until_disconnected()
+                ChumsBot31.run_until_disconnected()
         else:
-            PandaBot34.disconnect()    
+            ChumsBot31.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot32:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot32.run_until_disconnected()
+        else:
+            ChumsBot32.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot33:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot33.run_until_disconnected()
+        else:
+            ChumsBot33.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot36:
+if ChumsBot34:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot36.run_until_disconnected()
+                ChumsBot34.run_until_disconnected()
         else:
-            PandaBot36.disconnect()    
+            ChumsBot34.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot37:
+if ChumsBot36:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot37.run_until_disconnected()
+                ChumsBot36.run_until_disconnected()
         else:
-            PandaBot37.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot38:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot38.run_until_disconnected()
-        else:
-            PandaBot38.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot39:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot39.run_until_disconnected()
-        else:
-            PandaBot39.disconnect()    
+            ChumsBot36.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot40:
+if ChumsBot37:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot40.run_until_disconnected()
+                ChumsBot37.run_until_disconnected()
         else:
-            PandaBot40.disconnect()    
+            ChumsBot37.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot38:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot38.run_until_disconnected()
+        else:
+            ChumsBot38.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot39:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot39.run_until_disconnected()
+        else:
+            ChumsBot39.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot41:
+if ChumsBot40:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot41.run_until_disconnected()
+                ChumsBot40.run_until_disconnected()
         else:
-            PandaBot41.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot42:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot42.run_until_disconnected()
-        else:
-            PandaBot42.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot43:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot43.run_until_disconnected()
-        else:
-            PandaBot43.disconnect()    
-    except Exception as e:
-        LOGS.info(str(e), exc_info=True)
-        sys.exit(1)
-if PandaBot44:
-    try:
-        if len(sys.argv) in {1, 3, 4}:
-            with contextlib.suppress(ConnectionError):
-                PandaBot44.run_until_disconnected()
-        else:
-            PandaBot44.disconnect()    
+            ChumsBot40.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot45:
+if ChumsBot41:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot45.run_until_disconnected()
+                ChumsBot41.run_until_disconnected()
         else:
-            PandaBot45.disconnect()    
+            ChumsBot41.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot42:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot42.run_until_disconnected()
+        else:
+            ChumsBot42.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot43:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot43.run_until_disconnected()
+        else:
+            ChumsBot43.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot44:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot44.run_until_disconnected()
+        else:
+            ChumsBot44.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot46:
+if ChumsBot45:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot46.run_until_disconnected()
+                ChumsBot45.run_until_disconnected()
         else:
-            PandaBot46.disconnect()    
+            ChumsBot45.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot47:
+if ChumsBot46:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot47.run_until_disconnected()
+                ChumsBot46.run_until_disconnected()
         else:
-            PandaBot47.disconnect()    
+            ChumsBot46.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot48:
+if ChumsBot47:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot48.run_until_disconnected()
+                ChumsBot47.run_until_disconnected()
         else:
-            PandaBot48.disconnect()    
+            ChumsBot47.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
 
-if PandaBot49:
+if ChumsBot48:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot49.run_until_disconnected()
+                ChumsBot48.run_until_disconnected()
         else:
-            PandaBot49.disconnect()    
+            ChumsBot48.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
-if PandaBot35:
+
+if ChumsBot49:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot35.run_until_disconnected()
+                ChumsBot49.run_until_disconnected()
         else:
-            PandaBot35.disconnect()    
+            ChumsBot49.disconnect()    
+    except Exception as e:
+        LOGS.info(str(e), exc_info=True)
+        sys.exit(1)
+if ChumsBot35:
+    try:
+        if len(sys.argv) in {1, 3, 4}:
+            with contextlib.suppress(ConnectionError):
+                ChumsBot35.run_until_disconnected()
+        else:
+            ChumsBot35.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
         
-if PandaBot50:
+if ChumsBot50:
     try:
         if len(sys.argv) in {1, 3, 4}:
             with contextlib.suppress(ConnectionError):
-                PandaBot50.run_until_disconnected()
+                ChumsBot50.run_until_disconnected()
         else:
-            PandaBot50.disconnect()    
+            ChumsBot50.disconnect()    
     except Exception as e:
         LOGS.info(str(e), exc_info=True)
         sys.exit(1)
