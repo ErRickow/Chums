@@ -712,9 +712,9 @@ async def on_plug_in_callback_query_handler(event):
             category_plugins=category_plugins,
             category_pgno=category_pgno,
         )
-        text = f"**꧁༺ Panda Userbot ༻꧂\n\n༺🐼༻ Plugin: **`{category}`\
-                \n**༺🐼༻ Category: **__{getkey(category)}__\
-                \n**༺🐼༻ Total Commands:** __{len(PLG_INFO[category])}__\n\n꧁༺  HELP MENU ༻꧂"
+        text = f"**꧁༺ Panda Userbot ༻꧂\n\n༺ ༻ Plugin: **`{category}`\
+                \n**༺ ༻ Category: **__{getkey(category)}__\
+                \n**༺ ༻ Total Commands:** __{len(PLG_INFO[category])}__\n\n꧁༺  HELP MENU ༻꧂"
         try:
             return await event.edit(text, buttons=buttons)
         except Exception:
