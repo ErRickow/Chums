@@ -27,10 +27,10 @@ async def reply_id(event):
 
 
 async def get_user_from_event(
-    event, pandaevent=None, secondgroup=None, nogroup=False, noedits=False
+    event, chumsevent=None, secondgroup=None, nogroup=False, noedits=False
 ):
-    if pandaevent is None:
-        pandaevent = event
+    if chumsevent is None:
+        chumsevent = event
     if nogroup is False:
         if secondgroup:
             args = event.pattern_match.group(2).split(" ", 1)
@@ -68,27 +68,27 @@ async def get_user_from_event(
             previous_message = await event.get_reply_message()
             if previous_message.from_id is None:
                 if not noedits:
-                    await edit_delete(pandaevent, "`Well that's an anonymous admin !`")
+                    await edit_delete(chumsevent, "`Well that's an anonymous admin !`")
                 return None, None
             user_obj = await event.client.get_entity(previous_message.sender_id)
             return user_obj, extra
         elif not args:
             if not noedits:
                 await edit_delete(
-                    pandaevent, "`Pass the user's username, id or reply!`", 5
+                    chumsevent, "`Pass the user's username, id or reply!`", 5
                 )
             return None, None
     except Exception as e:
         LOGS.error(str(e))
     if not noedits:
-        await edit_delete(pandaevent, "__Couldn't fetch user to proceed further.__")
+        await edit_delete(chumsevent, "__Couldn't fetch user to proceed further.__")
     return None, None
 
 
-async def checking(pandaub):
-    panda_c = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+async def checking(eruserbot):
+    chums_c = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     try:
-        panda_channel = Get(panda_c)
-        await pandaub(panda_channel)
+        chums_channel = Get(chums_c)
+        await eruserbot(chums_channel)
     except BaseException:
         pass
