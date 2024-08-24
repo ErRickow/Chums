@@ -628,14 +628,14 @@ async def on_plugin_callback_query_handler(event):
     await event.answer(text, cache_time=0, alert=True)
 
 
-@tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"ilhammansiz")))
+@tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"errickow")))
 async def on_plugin_callback_query_handler(event):
     await event.edit(
         file=ilhammansiez,
         link_preview=True,
         buttons=[
-            Button.url("🤖 SUPPORT 🤖", "https://t.me/TEAMSquadUserbotSupport"),
-            Button.url("🐼 Creator 🐼", "https://t.me/diemmmmmmmmmm"),
+            Button.url("🤖 SUPPORT 🤖", "https://t.me/Pamerdong"),
+            Button.url(" Creator ", "https://t.me/Chakszzz"),
             Button.inline("⚙ Menu ⚙", data="mainmenu"),
         ],
     )
@@ -646,9 +646,9 @@ async def on_plugin_callback_query_handler(event):
 async def on_plug_in_callback_query_handler(event):
     category = str(event.pattern_match.group(1).decode("UTF-8"))
     buttons = paginate_help(0, GRP_INFO[category], category)
-    text = f"**꧁༺ Panda Userbot ༻꧂\n\n༺🐼༻ Category: **{category}\
-        \n**༺🐼༻  Total plugins :** {len(GRP_INFO[category])}\
-        \n**༺🐼༻  Total Commands:** {command_in_category(category)}\n\n꧁༺  HELP MENU ༻꧂"
+    text = f"**꧁༺ Chums Userbot ༻꧂\n\n༺🐼༻ Category: **{category}\
+        \n**༺ ༻  Total plugins :** {len(GRP_INFO[category])}\
+        \n**༺ ༻  Total Commands:** {command_in_category(category)}\n\n꧁༺  HELP MENU ༻꧂"
     await event.edit(text, buttons=buttons)
 
 
@@ -664,9 +664,9 @@ async def on_plug_in_callback_query_handler(event):
     pgno = int(event.pattern_match.group(3).decode("UTF-8"))
     if mtype == "plugin":
         buttons = paginate_help(pgno, GRP_INFO[category], category)
-        text = f"**꧁༺ Panda Userbot ༻꧂\n\n༺🐼༻ Category: **`{category}`\
-        \n**༺🐼༻ Total plugins :** __{len(GRP_INFO[category])}__\
-        \n**༺🐼༻ Total Commands:** __{command_in_category(category)}__\n\n꧁༺  HELP MENU ༻꧂"
+        text = f"**꧁༺ Panda Userbot ༻꧂\n\n༺ ༻ Category: **`{category}`\
+        \n**༺ ༻ Total plugins :** __{len(GRP_INFO[category])}__\
+        \n**༺ ༻ Total Commands:** __{command_in_category(category)}__\n\n꧁༺  HELP MENU ༻꧂"
     else:
         category_plugins = str(event.pattern_match.group(4).decode("UTF-8"))
         category_pgno = int(event.pattern_match.group(5).decode("UTF-8"))
@@ -678,9 +678,9 @@ async def on_plug_in_callback_query_handler(event):
             category_plugins=category_plugins,
             category_pgno=category_pgno,
         )
-        text = f"**꧁༺ Panda Userbot ༻꧂\n\n༺🐼༻ Plugin: **`{category}`\
-                \n**༺🐼༻ Category: **__{getkey(category)}__\
-                \n**༺🐼༻ Total Commands:** __{len(PLG_INFO[category])}__\n\n꧁༺  HELP MENU ༻꧂"
+        text = f"**꧁༺ Panda Userbot ༻꧂\n\n༺ ༻ Plugin: **`{category}`\
+                \n**༺ ༻ Category: **__{getkey(category)}__\
+                \n**༺ ༻ Total Commands:** __{len(PLG_INFO[category])}__\n\n꧁༺  HELP MENU ༻꧂"
     await event.edit(text, buttons=buttons)
 
 
