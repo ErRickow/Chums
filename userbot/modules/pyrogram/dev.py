@@ -153,7 +153,8 @@ async def terminal_handler(_, m: Message):
             )
         else:
             await m.reply(
-                msg, f"**COMMAND:**\n\n{m.text}\n\n\n**OUTPUT:**\n\n`{output}`"
+                msg, f"```**COMMAND:**\n\n{m.text}\n\n\n**OUTPUT:**\n\n`{output}`
+                ```"
             )
     else:
         await m.reply(msg, "**OUTPUT:**\n\n`No Output`")
