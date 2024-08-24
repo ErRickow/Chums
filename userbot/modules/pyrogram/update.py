@@ -197,6 +197,42 @@ async def update_handler(_, m):
             delme=8,
         )
 
+def check_command(command):
+    return shutil.which(command) is not None
+
+@Client.on_message(filters.command("up", prefix) & filters.me)
+async def ngapdate(client, message):
+  pros = await message.reply(
+        f"<blockquote> <b>Memeriksa pembaruan resources ..</b></blockquote>"
+    )
+  out = subprocess.check_output(["git", "pull"]).decode("UTF-8")
+  teks = f"<b>❒ Status resources :</b>\n"
+  memeg = f"<b>Perubahan logs </b>"
+  if "Already up to date." in str(out):
+        return await pros.edit(f"<blockquote>{teks}┖ {out}</blockquote>")
+  elif len(out) > 4096:
+          anuk = await pros.edit(
+            f"<blockquote> <b>Hasil akan dikirimkan dalam bentuk file ..</b></blockquote>"
+        )
+  anuk = None
+  with open("output.txt", "w+") as file:
+            file.write(out)
+
+           # X = f"<blockquote> <b>Perubahan logs </b></blockquote>"
+  #await client.send_document(
+  #        message.chat.id,
+  #        "output.txt",
+  #        caption=f"{X}",
+   #       reply_to_message_id=message.id,
+   #       )
+  os.remove("output.txt")
+  format_line = [f"┣ {line}" for line in out.splitlines()]
+  if format_line:
+    format_line[-1] = f"┖ {format_line[-1][2:]}"
+    format_output = "\n".join(format_line)
+  await pros.edit(f"<blockquote>{memeg}\n\n{teks}{format_output}</blockquote>")
+  os.execl(sys.executable, sys.executable, "erbanget.py")
+  
 
 app.CMD_HELP.update(
     {
