@@ -1,0 +1,20 @@
+#!/bin/bash
+## Running ChumsUserbot
+
+terakhir () {
+    echo "
+    
+=+---------------------------------------------------------+=
+꧁༺ Chums Userbot ༻꧂
+Copyright (C) 2024 Chums Userbot
+Powered By @chakszzz with Telegram
+=+---------------------------------------------------------+=
+    "
+}
+
+_start_all () {
+    terakhir
+    python3 -m userbot
+}
+
+_start_all
