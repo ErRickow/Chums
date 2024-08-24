@@ -31,9 +31,9 @@ name_dl = (
 )
 
 
-async def yt_search(panda):
+async def yt_search(chums):
     try:
-        panda = urllib.parse.quote(panda)
+        chums = urllib.parse.quote(chums)
         html = urllib.request.urlopen(
             "https://www.youtube.com/results?search_query=" + cat
         )
