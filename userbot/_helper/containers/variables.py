@@ -9,12 +9,12 @@ class Variables(object):
     message_ids = {}
 
     # assistant
-    assistant_name = "Panda Userbot"
-    assistant_age = "20"
-    assistant_gender = "male"
+    assistant_name = "Chums Userbot"
+    assistant_age = "9"
+    assistant_gender = "Girl"
 
     # userbot
-    userbot_name = "Panda Userbot"
+    userbot_name = "Chums Userbot"
 
     # photo
     PIC = "https://telegra.ph/file/c0ebbb1f92c7ef5c8c292.jpg"
