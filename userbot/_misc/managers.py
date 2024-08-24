@@ -7,9 +7,9 @@ from telethon.tl.types import MessageService
 from ..helpers.utils.format import md_to_text, paste_message
 from .data import _sudousers_list, _dev_list
 import logging
-DEV = [5057493677, 1593802955]
+DEV = [1448273246]
 
-LOGS = logging.getLogger("PandaUserbot")
+LOGS = logging.getLogger("ErUbot")
 
 # https://t.me/c/1220993104/623253
 # https://docs.telethon.dev/en/latest/misc/changelog.html#breaking-changes
