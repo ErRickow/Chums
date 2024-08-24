@@ -30,13 +30,13 @@ from ..helpers.functions.utube import (
 )
 from . import CMD_INFO, GRP_INFO, PLG_INFO, check_owner
 from .logger import logging
-from .session import PandaBot, tgbot
+from .session import ChumsBot, tgbot
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 
 tr = Config.COMMAND_HAND_LER
-pandaub = PandaBot
+pandaub = ChumsBot
 
 ilhammansiez = Config.CHUMS_LOGO_HELP = SqL.get_key("CHUMS_LOGO_HELP") or "https://telegra.ph/file/ccbc25f1c295310902070.jpg"
 
@@ -837,7 +837,7 @@ async def on_plugin_callback_query_handler(event):
 async def closet(lol):
     b = await lol.get_input_chat()
     a = await lol.edit("Close")
-    await PandaBot.delete_messages(b, a)
+    await ChumsBot.delete_messages(b, a)
 
 
 @tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"menuset")))
@@ -973,7 +973,7 @@ async def on_plugin_callback_query_handler(event):
     var = "BOT_USERNAME"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "**Silahkan Kirimkan tanda perintah bot Untuk var BOT_USERNAME anda\nContoh @panda_bot**\n\nGunakan /cancel untuk membatalkan."
+            "**Silahkan Kirimkan tanda perintah bot Untuk var BOT_USERNAME anda\nContoh @chums_bot**\n\nGunakan /cancel untuk membatalkan."
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
