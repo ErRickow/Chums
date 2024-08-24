@@ -1,6 +1,8 @@
 # Rewrite bye er rickew @chakszzz
 # original repo from panda Userbot
-# Mit License
+# MIT License
+
+# Copyright (c) 2024 Just R
 
 import asyncio
 import os
