@@ -134,7 +134,7 @@ class MongoDB(_BaseDatabase):
         super().__init__()
 
     def __repr__(self):
-        return f"<Panda.MonGoDB\n -total_keys: {len(self.keys())}\n>"
+        return f"<Chums.MonGoDB\n -total_keys: {len(self.keys())}\n>"
 
     @property
     def name(self):
@@ -189,7 +189,7 @@ class SqlDB(_BaseDatabase):
             self._connection.autocommit = True
             self._cursor = self._connection.cursor()
             self._cursor.execute(
-                "CREATE TABLE IF NOT EXISTS Panda (pandaCli varchar(70))"
+                "CREATE TABLE IF NOT EXISTS Chums (chumsCli varchar(70))"
             )
         except Exception as error:
             LOGS.exception(error)
@@ -206,21 +206,21 @@ class SqlDB(_BaseDatabase):
     @property
     def usage(self):
         self._cursor.execute(
-            "SELECT pg_size_pretty(pg_relation_size('Panda')) AS size"
+            "SELECT pg_size_pretty(pg_relation_size('Chums')) AS size"
         )
         data = self._cursor.fetchall()
         return int(data[0][0].split()[0])
 
     def keys(self):
         self._cursor.execute(
-            "SELECT column_name FROM information_schema.columns WHERE table_schema = 'public' AND table_name  = 'panda'"
+            "SELECT column_name FROM information_schema.columns WHERE table_schema = 'public' AND table_name  = 'chums'"
         )  # case sensitive
         data = self._cursor.fetchall()
         return [_[0] for _ in data]
 
     def get(self, variable):
         try:
-            self._cursor.execute(f"SELECT {variable} FROM Panda")
+            self._cursor.execute(f"SELECT {variable} FROM Chums")
         except psycopg2.errors.UndefinedColumn:
             return None
         data = self._cursor.fetchall()
@@ -233,28 +233,28 @@ class SqlDB(_BaseDatabase):
 
     def set(self, key, value):
         try:
-            self._cursor.execute(f"ALTER TABLE Panda DROP COLUMN IF EXISTS {key}")
+            self._cursor.execute(f"ALTER TABLE Chums DROP COLUMN IF EXISTS {key}")
         except (psycopg2.errors.UndefinedColumn, psycopg2.errors.SyntaxError):
             pass
         except BaseException as er:
             LOGS.exception(er)
         self._cache.update({key: value})
-        self._cursor.execute(f"ALTER TABLE Panda ADD {key} TEXT")
-        self._cursor.execute(f"INSERT INTO Panda ({key}) values (%s)", (str(value),))
+        self._cursor.execute(f"ALTER TABLE Chums ADD {key} TEXT")
+        self._cursor.execute(f"INSERT INTO Chums ({key}) values (%s)", (str(value),))
         return True
 
     def delete(self, key):
         try:
-            self._cursor.execute(f"ALTER TABLE Panda DROP COLUMN {key}")
+            self._cursor.execute(f"ALTER TABLE Chums DROP COLUMN {key}")
         except psycopg2.errors.UndefinedColumn:
             return False
         return True
 
     def flushall(self):
         self._cache.clear()
-        self._cursor.execute("DROP TABLE Panda")
+        self._cursor.execute("DROP TABLE Chums")
         self._cursor.execute(
-            "CREATE TABLE IF NOT EXISTS Panda (pandaCli varchar(70))"
+            "CREATE TABLE IF NOT EXISTS Chums (chumsCli varchar(70))"
         )
         return True
 
@@ -317,7 +317,7 @@ class RedisDB(_BaseDatabase):
 
 class LocalDB(_BaseDatabase):
     def __init__(self):
-        self.db = Database("panda")
+        self.db = Database("chums")
         self.get = self.db.get
         self.set = self.db.set
         self.delete = self.db.delete
@@ -334,7 +334,7 @@ class LocalDB(_BaseDatabase):
         return self._cache.keys()
 
     def __repr__(self):
-        return f"<Panda.LocalDB\n -total_keys: {len(self.keys())}\n>"
+        return f"<Chums.LocalDB\n -total_keys: {len(self.keys())}\n>"
 
 def pyDatabase():
     _er = False
