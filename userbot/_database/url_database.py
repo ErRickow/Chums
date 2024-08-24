@@ -332,7 +332,7 @@ class LocalDB(_BaseDatabase):
         return self._cache.keys()
 
     def __repr__(self):
-        return f"<chums.LocalDB\n -total_keys: {len(self.keys())}\n>"
+        return f"<Chums.LocalDB\n -total_keys: {len(self.keys())}\n>"
 
 def pyDatabase():
     _er = False
