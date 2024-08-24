@@ -98,7 +98,7 @@ async def autogrup():
         r = await mansizbot(
             CreateChannelRequest(
                 title="🛠 BOTLOG & SETTING 🛠",
-                about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
+                about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @Pamerdong",
                 megagroup=True,
             ),
         )
@@ -227,7 +227,7 @@ async def autobot():
                 r = await mansizbot(
                     CreateChannelRequest(
                         title="🛠 BOTLOG & SETTING 🛠",
-                        about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
+                        about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @Pamerdong",
                         megagroup=True,
                     ),
                 )
@@ -301,14 +301,14 @@ async def autobot():
         await mansizbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await mansizbot.send_message(
-        bf, f"PandaX_Userbot Assistant\n\nBy ~ @diemmmmmmmmmm\nSupport ~ @TEAMSquadUserbotSupport ",
+        bf, f"Chums Assistant\n\nBy ~ @chakszzz\nSupport ~ @pamerdong ",
         )
         LOGS.info("🛠 MEMBUAT Grup Pribadi HARAP TUNGU !!")
         try:
             r = await mansizbot(
                 CreateChannelRequest(
                     title="🛠 BOTLOG & SETTING 🛠",
-                    about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
+                    about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @Pamerdong",
                     megagroup=True,
                 ),
             )
