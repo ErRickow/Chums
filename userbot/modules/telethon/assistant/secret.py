@@ -7,8 +7,8 @@ import re
 
 from telethon.events import CallbackQuery
 
-from .... import PandaBot, tgbot
-pandaub = PandaBot
+from .... import ChumsBot, tgbot
+eruserbot = ChumsBot
 
 @tgbot.on(CallbackQuery(data=re.compile(b"secret_(.*)")))
 async def on_plug_in_callback_query_handler(event):
@@ -18,7 +18,7 @@ async def on_plug_in_callback_query_handler(event):
         try:
             message = jsondata[f"{timestamp}"]
             userid = message["userid"]
-            ids = [userid, pandaub.uid]
+            ids = [userid, eruserbot.uid]
             if event.query.user_id in ids:
                 encrypted_tcxt = message["text"]
                 reply_pop_up_alert = encrypted_tcxt
