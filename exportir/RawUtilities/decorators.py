@@ -18,7 +18,7 @@ from userbot.config import Config
 from userbot._misc.data import _sudousers_list, blacklist_chats_list
 from userbot._misc.events import MessageEdited, NewMessage
 import logging
-from userbot._misc.session import PandaBot as pandaub
+from userbot._misc.session import ChumsBot as eruserbot
 from userbot.helpers.utils.format import paste_text
 from userbot.helpers.utils.utils import runcmd
 from userbot._database import gvarstatus
@@ -45,12 +45,12 @@ def admin_cmd(pattern=None, command=None, **args):  # sourcery no-metrics
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.COMMAND_HAND_LER) == 2:
-                pandareg = "^" + Config.COMMAND_HAND_LER
+                chums = "^" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER[1]
             elif len(Config.COMMAND_HAND_LER) == 1:
-                pandareg = "^\\" + Config.COMMAND_HAND_LER
+                chums = "^\\" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(pandareg + pattern)
+            args["pattern"] = re.compile(chums + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -97,12 +97,12 @@ def sudo_cmd(pattern=None, command=None, **args):  # sourcery no-metrics
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_COMMAND_HAND_LER) == 2:
-                pandareg = "^" + Config.SUDO_COMMAND_HAND_LER
+                chums = "^" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.SUDO_COMMAND_HAND_LER[1]
             elif len(Config.SUDO_COMMAND_HAND_LER) == 1:
-                pandareg = "^\\" + Config.SUDO_COMMAND_HAND_LER
+                chums = "^\\" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(pandareg + pattern)
+            args["pattern"] = re.compile(chums + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -228,7 +228,7 @@ def register(**args):
     def decorator(func):
         if not disable_edited:
             catub.add_event_handler(func, MessageEdited(**args))
-        pandaub.add_event_handler(func, NewMessage(**args))
+        eruserbot.add_event_handler(func, NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(func)
         except Exception:
@@ -284,8 +284,8 @@ def command(**args):
 
     def decorator(func):
         if allow_edited_updates:
-            pandaub.add_event_handler(func, MessageEdited(**args))
-        pandaub.add_event_handler(func, NewMessage(**args))
+            eruserbot.add_event_handler(func, MessageEdited(**args))
+        eruserbot.add_event_handler(func, NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(func)
         except BaseException:
