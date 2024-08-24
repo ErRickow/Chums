@@ -18,7 +18,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 
-class PandaUserbotToken(TelegramClient):
+class ChumsUserbotToken(TelegramClient):
     def bot_cmd(
         self: TelegramClient,
         disable_errors: bool = False,
@@ -63,7 +63,7 @@ class PandaUserbotToken(TelegramClient):
                         result = output[0] + output[1]
                         ftext += result
                         pastelink = paste_text(ftext)
-                        text = "**PandaUserbot Error report**\n\n"
+                        text = "**Chums Userbot Error report**\n\n"
                         link = "[Klik](https://t.me/TEAMSquadUserbotSupport)"
                         text += "If you wanna you can report it"
                         text += f"- just forward this message {link}.\n"
