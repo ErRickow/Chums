@@ -7,9 +7,9 @@
 
 
 from ..Session import *
-Bot = PandaBot
-Stark = PandaBot
+Bot = ChumsBot
+Stark = ChumsBot
 tgbot = tgbot
-pandaub = PandaBot
-PandaBot2 =  PandaBot2
-PandaBot3 = PandaBot3
+eruserbot = ChumsBot
+ChumsBot2 =  ChumsBot2
+ChumsBot3 = ChumsBot3
