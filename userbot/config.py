@@ -280,7 +280,7 @@ class Config(object):
     TG_BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     TZ = SqL.get_key("TZ") or os.environ.get("TZ", "Asia/Jakarta") 
     UPSTREAM_REPO = SqL.get_key("UPSTREAM_REPO") or os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/AllTeamPanda/PandaX_Userbot.git"
+        "UPSTREAM_REPO", "https://github.com/ErRickow/Chums.git"
     ) 
     BOT_TOKEN = SqL.get_key("BOT_TOKEN") or TG_BOT_TOKEN 
     BOT_USERNAME = SqL.get_key("BOT_USERNAME") or TG_BOT_USERNAME
@@ -304,8 +304,8 @@ class Config(object):
     THUMB_IMAGE = os.environ.get(
         "THUMB_IMAGE", "https://telegra.ph/file/0c571ae6dcb68ea2bdf49.jpg"
     )
-    PANDA_HELP_LOGO = os.environ.get(
-        "PANDA_HELP_LOGO", None
+    CHUMS_LOGO_HELP = os.environ.get(
+        "CHUMS_LOGO_HELP", None
     )
     UB_BLACK_LIST_CHAT = {
         int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
@@ -398,7 +398,7 @@ class Config(object):
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     FBAN_GROUP = int(os.environ.get("FBAN_GROUP", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/AllTeamPanda/PandaX_Userbot"
+        "UPSTREAM_REPO", "https://github.com/ErRickow/Chums"
     )
     ALIVE_IMG = os.environ.get(
         "ALIVE_IMG", "https://telegra.ph/file/8f0e9e25427f9da09e08a.jpg"
