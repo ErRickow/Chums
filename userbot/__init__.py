@@ -152,7 +152,7 @@ from telethon import version
 
 async def update_user(chat_id, msg_id):
     message = (
-        f"**PandaUserbot {__version__} Berhasil di-update..**\n\n"
+        f"**Chums Userbot {__version__} Berhasil di-update..**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
