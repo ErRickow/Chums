@@ -33,7 +33,7 @@ Total Clients - {}
 
 
 THON_ON = """
-꧁༺ Panda Userbot ༻꧂\n\n
+꧁༺ Chums Userbot ༻꧂\n\n
 User - @{} 
 Version - `{}' `[HAVE ENABLED]` 
 Type `{}alive` to Check Bot 
@@ -895,7 +895,7 @@ def Telethon():
                     break
             tgbot.get_me()
             ChumsBot33.me = ChumsBot33.get_me()
-            PandaBo33.uid = tgbot.uid = utils.get_peer_id(ChumsBot33.me)
+            ChumsBo33.uid = tgbot.uid = utils.get_peer_id(ChumsBot33.me)
             if pdB.get_key("OWNER_ID") or Var.OWNER_ID == 0:
                 Var.OWNER_ID = utils.get_peer_id(ChumsBot33.me)
                 pdB.set_key("OWNER_ID", Var.OWNER_ID)
@@ -973,7 +973,7 @@ def Telethon():
                     break
             tgbot.get_me()
             ChumsBot36.me = ChumsBot36.get_me()
-            PandaBo36.uid = tgbot.uid = utils.get_peer_id(ChumsBot36.me)
+            ChumsBo36.uid = tgbot.uid = utils.get_peer_id(ChumsBot36.me)
             if pdB.get_key("OWNER_ID") or Var.OWNER_ID == 0:
                 Var.OWNER_ID = utils.get_peer_id(ChumsBot36.me)
                 pdB.set_key("OWNER_ID", Var.OWNER_ID)
@@ -1077,7 +1077,7 @@ def Telethon():
                     break
             tgbot.get_me()
             ChumsBot40.me = ChumsBot40.get_me()
-            PandaBo40.uid = tgbot.uid = utils.get_peer_id(ChumsBot40.me)
+            ChumsBo40.uid = tgbot.uid = utils.get_peer_id(ChumsBot40.me)
             if pdB.get_key("OWNER_ID") or Var.OWNER_ID == 0:
                 Var.OWNER_ID = utils.get_peer_id(ChumsBot40.me)
                 pdB.set_key("OWNER_ID", Var.OWNER_ID)
