@@ -1,5 +1,5 @@
 
-ubot_version = "0.8"
+ubot_version = "0.1"
 
 from sys import version_info
 
@@ -14,9 +14,9 @@ __Thn__ = "8"
 
 
 __python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
-__license__ = "GNU Affero General Public License v3.0"
-__author__ = "PandaX_UserBot <https://github.com/ilhammansiz/PandaX_Userbot>"
-__copyright__ = "PandaX_UserBot Copyright (©) 2020 - 2021  " + __author__
+__license__ = "MIT"
+__author__ = "Chums_Userbot <https://github.com/ErRickow/Chums>"
+__copyright__ = "Chums Userbot [©] 2 0 2 4 [3R]  " + __author__
 
 
 versi = f"{__Tgl__}.{__Bln__}.{__Thn__}"
