@@ -90,7 +90,7 @@ async def evaluate_handler(_, m: Message):
         )
         await msg.delete()
     else:
-        await app.send_edit(msg, final_output)
+        await m.reply(msg, final_output)
 
 
 @app.on_message(gen("term", allow=["sudo"]))
@@ -153,7 +153,7 @@ async def terminal_handler(_, m: Message):
             )
         else:
             await m.reply(
-                msg, f"```**COMMAND:**\n\n{m.text}\n\n\n**OUTPUT:**\n\n`{output}`
+                msg, f"``` **COMMAND:**\n\n{m.text}\n\n\n**OUTPUT:**\n\n`{output}`
                 ```"
             )
     else:
