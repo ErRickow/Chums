@@ -61,7 +61,7 @@ def higlighted_text(
     source_img = templait.convert("RGBA").resize((1024, 1024))
     w, h = source_img.size
     if font_name is None:
-        font_name = "Panda/helpers/styles/impact.ttf"
+        font_name = "Chums/helpers/styles/impact.ttf"
     font = ImageFont.truetype(font_name, font_size)
     width, hight = position
     # get text size
