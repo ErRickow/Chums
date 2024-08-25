@@ -21,7 +21,7 @@ while flag:
         from .progress import *
         from .qhelper import process
         from .tools import *
-        from .utils import _format, _pandatools, _pandautils
+        from .utils import _format, _chumstools, _chumsutils
 
         break
     except ModuleNotFoundError as e:
