@@ -211,7 +211,7 @@ async def autobot():
             await asyncio.sleep(1)
             await mansizbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await mansizbot.send_file(bf, "PandaVersion/Panda/pandaasis.jpg")
+            await mansizbot.send_file(bf, "PandaVersion/Chums/chumsasis.jpg")
             await asyncio.sleep(2)
             await mansizbot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
